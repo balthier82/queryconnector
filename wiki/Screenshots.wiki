@@ -1,8 +1,8 @@
 #summary Screenshots
 
-https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png
-https://queryconnector.googlecode.com/svn/wiki/howtouse_step3.png
-https://queryconnector.googlecode.com/svn/wiki/howtouse_step5.png
-https://queryconnector.googlecode.com/svn/wiki/howtouse_step6.png
-https://queryconnector.googlecode.com/svn/wiki/howtouse_step7.png
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png<br>
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step3.png<br>
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step5.png<br>
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step6.png<br>
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step7.png<br>
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step8.png
