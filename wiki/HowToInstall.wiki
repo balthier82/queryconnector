@@ -1,4 +1,4 @@
-#How to install
+#summary *How to install* instruction
 
 = Introduction =
 
