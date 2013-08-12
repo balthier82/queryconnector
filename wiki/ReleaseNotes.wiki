@@ -1,9 +1,9 @@
 #summary Release notes
 
-Version 1.0.1
+*Version 1.0.1*
  # Fixed several shortcomings in the translation 
  # The extension always memorized the connection information. Not any more, is optional. 
  # The extension's options are now saved on metadata rather than to the user-defined attributes.
 
-Version 1.0:
+*Version 1.0*
   First release
