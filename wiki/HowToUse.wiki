@@ -1,5 +1,7 @@
 #summary *How to Use* the extension
 
+<g:plusone size="medium"></g:plusone>
+
 = Introduction =
 
 A brief explanation on how to use the extension
@@ -47,3 +49,5 @@ https://queryconnector.googlecode.com/svn/wiki/howtouse_step9.png
 
 
 Enjoy! :D
+
+<g:plusone size="medium"></g:plusone>
