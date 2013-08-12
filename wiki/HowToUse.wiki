@@ -23,4 +23,4 @@ https://queryconnector.googlecode.com/svn/wiki/howtouse_step3.png
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step5.png
 
-...that will allow you to select the ODBC source from those configured at the user level, system level or through the use of *. dsn file.
+...that will allow you to select the ODBC source from those configured at the user level, system level or through the use of `*`.dsn file.
