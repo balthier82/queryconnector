@@ -1,6 +1,6 @@
 #summary *How to install* instruction
 
-https://code.google.com/p/queryconnector/source/browse/wiki/QueryConnector.png
+https://queryconnector.googlecode.com/svn/wiki/QueryConnector.png
 
 = Introduction =
 
