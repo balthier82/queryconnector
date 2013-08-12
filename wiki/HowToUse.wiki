@@ -1,5 +1,7 @@
 #summary *How to Use* the extension
 
+<g:plusone size="medium"></g:plusone>
+
 = Introduction =
 
 A brief explanation on how to use the extension
@@ -48,4 +50,4 @@ https://queryconnector.googlecode.com/svn/wiki/howtouse_step9.png
 
 Enjoy! :D
 
-<wiki:gadget url="http://hosting.gmodules.com/ig/gadgets/file/114106773607558272009/share_count.xml" height="600" width="600" border="0" up_url="https://code.google.com/p/queryconnector"/> 
+<g:plusone size="medium"></g:plusone>
