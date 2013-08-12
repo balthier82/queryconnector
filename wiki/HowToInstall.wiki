@@ -2,7 +2,7 @@
 
 = Introduction =
 
-How to Install the extension on LibreOffice or OpenOffice installation.
+How to Install the extension on {{{LibreOffice}}] or OpenOffice installation.
 
 = Details =
 
