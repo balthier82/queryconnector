@@ -1,6 +1,4 @@
-#summary Screenshots of version 1.0/1.0.1
-
-==Version 1.0/1.0.1==
+#summary Screenshots
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png<br><br>
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step3.png<br><br>
