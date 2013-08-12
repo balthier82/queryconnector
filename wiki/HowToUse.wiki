@@ -13,3 +13,6 @@ https://queryconnector.googlecode.com/svn/wiki/howtouse_step1.png
  2. Click on *Data > Query > Attach data...*
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png
+
+ 3. In the window that appears, click Start
+ 4. 
