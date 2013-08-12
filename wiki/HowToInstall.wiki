@@ -1,5 +1,7 @@
 #summary *How to install* instruction
 
+https://code.google.com/p/queryconnector/source/browse/wiki/QueryConnector.png
+
 = Introduction =
 
 How to Install the extension on LibreOffice or OpenOffice installation.
