@@ -1,0 +1,13 @@
+#How to install
+
+= Introduction =
+
+How to Install the extension on LibreOffice or OpenOffice installation.
+
+= Details =
+
+# Tools -> Extension Manager
+# Click on *Add...*
+# Select *queryconnector.oxt*
+# Accept the prompted license
+# Enjoy! :D
