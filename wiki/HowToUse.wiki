@@ -1,4 +1,4 @@
-#summary *How to Use* the extension (ver. 1.0/1.0.1)
+#summary *How to Use* the extension
 
 <g:plusone size="medium"></g:plusone>
 
