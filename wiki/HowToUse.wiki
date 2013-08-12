@@ -10,6 +10,6 @@ A brief explanation on how to use the extension
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step1.png
 
- 2. Click on *Data->Query->Attach data...*
+ 2. Click on *Data > Query > Attach data...*
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png
