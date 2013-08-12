@@ -19,7 +19,11 @@ https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step3.png
 
- 5. If you decide to use ODBC, click on the *Select ODBC source ...* button, you will see the following dialog box:
+ 5. Choosing the direct connection via JDBC, you must choose the driver and specify the connection parameters
+
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step4.png
+
+ 6. If you decide, instead, to use ODBC, click on the *Select ODBC source ...* button, you will see the following dialog box:
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step5.png
 
