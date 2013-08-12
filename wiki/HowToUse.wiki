@@ -1,0 +1,15 @@
+#summary *How to Use* the extension
+
+= Introduction =
+
+A brief explanation on how to use the extension
+
+= Details =
+
+ # Select the starting cell of the spreadsheet where the result of the query will be inserted.
+
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step1.png
+
+ # Click on *Data->Query->Attach data...*
+
+https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png
