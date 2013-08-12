@@ -1,3 +1,4 @@
+<pre>
                   GNU LESSER GENERAL PUBLIC LICENSE
                        Version 2.1, February 1999
 
@@ -456,3 +457,4 @@ SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
 DAMAGES.
 
                      END OF TERMS AND CONDITIONS
+</pre>
