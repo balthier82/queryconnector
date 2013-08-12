@@ -15,7 +15,7 @@ https://queryconnector.googlecode.com/svn/wiki/howtouse_step1.png
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step2.png
 
  3. In the window that appears, click Start <br><br>
- 4. Select the method by which you want to connect to the database: via *JDBC* or *ODBC*
+ 4. Select the method by which you want to connect to the database: *JDBC* or *ODBC*
 
 https://queryconnector.googlecode.com/svn/wiki/howtouse_step3.png
 
