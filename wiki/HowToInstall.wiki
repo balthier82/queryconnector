@@ -16,6 +16,6 @@ How to Install the extension on LibreOffice or OpenOffice installation.
  # Accept the prompted license <br>
  # Enjoy! :D
 
-*On Ubuntu:*
+*On Ubuntu with LibreOffice installed via apt-get:*
 
  # Make sure that the package *libreoffice-java-common* is installed, otherwise the extension will not be registered properly.
