@@ -13,5 +13,3 @@ How to Install the extension on LibreOffice or OpenOffice installation.
  # Select *queryconnector.oxt* <br>
  # Accept the prompted license <br>
  # Enjoy! :D
-
-<g:plusone size="medium"></g:plusone>
