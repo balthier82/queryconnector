@@ -1,5 +1,8 @@
 #summary Release notes
 
+*Version 1.0.3*
+ # Java classes have been recompiled with code level 1.6 instead of 1.7
+
 *Version 1.0.2*
  # Fixed some problems due to the fact that unix uses a case-sensitive file system.
 
