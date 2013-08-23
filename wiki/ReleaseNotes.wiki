@@ -1,9 +1,10 @@
 #summary Release notes
 
 *Version 1.1.0*
- # The layout of the windows and Swing components has been renovated 
+ # <pre>The layout of the windows and Swing components has been 
+   renovated 
    to solve some problems found in different Look And Feel of Java 
-   used by operating systems.
+   used by operating systems.</pre>
  # The main window now is not set as Always on Top.
  # Fixed a bug with the ODBC Source Selection dialog in which the 
    folder selection dialog (used to select the folder containing the 
