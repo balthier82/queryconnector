@@ -1,10 +1,12 @@
 #summary Release notes
 
 *Version 1.1.0*
- # The layout of the windows and Swing components has been renovated to solve some problems found in different Look And Feel of Java used by operating systems.}}}
- # The main window now is not set as Always on Top.
- # Fixed a bug with the ODBC Source Selection dialog in which the folder selection dialog (used to select the folder containing the DSN files) was always below that window.
- # Added support for unixODBC on Unix systems (works only on the JRE provided by Oracle) *NOTE: Please read the Wiki page "How to Use"*
+ <ul> 
+   <li>The layout of the windows and Swing components has been renovated to solve some problems found in different Look And Feel of Java used by operating systems.</li>
+   <li>The main window now is not set as Always on Top.</li>
+   <li>Fixed a bug with the ODBC Source Selection dialog in which the folder selection dialog (used to select the folder containing the DSN files) was always below that window.</li>
+   <li>Added support for unixODBC on Unix systems (works only on the JRE provided by Oracle) *NOTE: Please read the Wiki page "How to Use"*</li>
+</ul>
 
 *Version 1.0.3*
  # Java classes have been recompiled with code level 1.6 instead of 1.7
