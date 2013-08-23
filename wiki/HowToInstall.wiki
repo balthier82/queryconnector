@@ -27,4 +27,4 @@ How to Install the extension on LibreOffice or OpenOffice installation.
 
    <code language="bash">export LD_PRELOAD=$LD_PRELOAD:/usr/lib/libodbc.so:/usr/lib/libodbcinst.so</code>
 
-  assuming that the two files are located in / usr / lib. Without this setting OpenOffice / LibreOffice will crash.
+   assuming that the two files are located in / usr / lib. Without this setting OpenOffice / LibreOffice will crash.
