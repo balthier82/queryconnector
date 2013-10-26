@@ -1,5 +1,8 @@
 #summary Release notes
 
+*Version 1.1.1*
+ # Add "Update All" menu item
+
 *Version 1.1.0*
  # The layout of the windows and Swing components has been renovated to solve some problems found in different Look And Feel of Java used by operating systems.
  # The main window now is not set as Always on Top.
