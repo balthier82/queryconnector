@@ -2,6 +2,7 @@
 
 *Version 1.2.0*
  # Add support for multi query on different sheets with the "Update All" menu item
+ # Solved a problem with the null value
 
 *Version 1.1.1*
  # Add "Update All" menu item
