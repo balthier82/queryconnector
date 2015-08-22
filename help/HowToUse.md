@@ -35,7 +35,7 @@ A brief explanation on how to use the extension
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step7.png)
 
- 8) Finally, check the checkbox in the *Settings* area if you want to store the connection information inside the document <font color="red">(THE INFORMATION IS STORED WITHOUT ENCRYPTION, FOR NOW)</font>
+ 8) Finally, check the checkbox in the *Settings* area if you want to store the connection information inside the document (**THE INFORMATION IS STORED WITHOUT ENCRYPTION, FOR NOW**)
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step8.png)
 
