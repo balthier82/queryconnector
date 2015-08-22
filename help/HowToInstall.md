@@ -15,7 +15,7 @@ How to Install the extension on LibreOffice or OpenOffice installation.
 
 *Only on Ubuntu with LibreOffice installed via apt-get:*
 
-* Make sure that the package *libreoffice-java-common* is installed, otherwise the extension will not be registered properly. 
+* Make sure that the package **libreoffice-java-common** is installed, otherwise the extension will not be registered properly. 
 
 ###Instructions for use unixODBC:
 
