@@ -9,7 +9,8 @@ qc.updateAll(ThisComponent)
 
 ###External Language Example (Java)
 
-we suppose that **text.ods** is a spreadsheet that contains at least one query attached:
+This example open a calc document (**test.ods**), update all the queries attached
+and save it as a Excel file (.xls).
 
 ```java
 import com.sun.star.comp.helper.Bootstrap;
