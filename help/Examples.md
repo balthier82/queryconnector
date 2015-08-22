@@ -1,6 +1,6 @@
 ###Scripting Example
 
-```REALbasic
+```Visual Basic
 qc = CreateUnoService("com.meserico.QueryConnectorService")
 qc.updateAll(ThisComponent)
 ```
