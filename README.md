@@ -19,3 +19,8 @@ Allows you to attach a query to a spreadsheet LibreOffice/OpenOffice Calc, savin
 Current Version (1.2.1 - **Beta**): [Download](https://github.com/balthier82/queryconnector/raw/master/versions/queryconnector_1.2.1.oxt)
 
 (Compatible with OpenOffice 4.0 / LibreOffice 4.0 or higher - **Java is required**)
+
+###Other:
+
+ * Apache OpenOffice Extension (http://extensions.openoffice.org/en/project/queryconnector)
+ * LibreOffice Extension (http://extensions.libreoffice.org/extension-center/queryconnector)
