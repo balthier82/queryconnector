@@ -14,6 +14,9 @@ Allows you to attach a query to a spreadsheet LibreOffice/OpenOffice Calc, savin
 * [Build](https://github.com/balthier82/queryconnector/blob/master/help/Build.md)
 * [License](https://github.com/balthier82/queryconnector/blob/master/help/License.md) (LGPL)
 
+###For Developers:
+* [Examples](https://github.com/balthier82/queryconnector/blob/master/help/Examples.md)
+
 ###Dowload:
 
 Current Version (1.3.0 - **Beta**): [Download](https://github.com/balthier82/queryconnector/raw/master/versions/queryconnector_1.3.0.oxt)
