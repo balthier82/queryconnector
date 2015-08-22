@@ -7,7 +7,7 @@ The queryconnector project is composed by two parts:
 
 ###LODBConnector
 
-Is the GUI part of the extension. It has been developed with NetBeans and you
+It's the GUI part of the extension. It has been developed with NetBeans and you
 can easely modify and compile it using this IDE. Simply open the project with 
 NetBeans.
 
