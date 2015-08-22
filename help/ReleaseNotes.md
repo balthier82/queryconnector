@@ -1,7 +1,7 @@
 #Release notes
 
 **Version 1.3.0**
-* Added a **UNO Component Service** to allow scripting within Basic/Javascript/etc within OpenOffice/LibreOffice or with external language like C++ or Java.
+* Added a **UNO Component Service** to allow scripting with Basic/Javascript/etc within OpenOffice/LibreOffice or with external language like C++ or Java.
 * See [Examples](https://github.com/balthier82/queryconnector/blob/master/help/Examples.md).
 
 **Version 1.2.1**
