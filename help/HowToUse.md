@@ -24,11 +24,11 @@ A brief explanation on how to use the extension
 > You have to ensure that the JDBC driver that you intend to use is installed and configured correctly. The .jar file of the driver have to be inserted on the LibreOffice/OpenOffice classpath. Go to **Tools->Options->Advanced** then click on the
 **Class Path** button. In the shown dialog, click on the **Add Archive** button and select the .jar file that contain the driver.
 
- 5b) If you decide, instead, to use ODBC, click on the *Select ODBC source ...* button and you will see the following dialog box:
+ 5b) If you decide, instead, to use ODBC, click on the *Select ODBC source ...* button and you will see the following dialog box...
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step5.png)
 
-...that will allow you to select the ODBC source from those configured at the user level, system level or through the use of `*`.dsn files.
+...that allows you to select the ODBC source from those configured at the user level, system level or through the use of *.dsn files.
 
  6) At the next step, you have to enter the query:
 
