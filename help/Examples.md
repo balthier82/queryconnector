@@ -21,7 +21,7 @@ public class TestUpdateAll {
             XComponentLoader xComponentLoader = cast(XComponentLoader.class, desktop );
 			
 			
-            XComponent xDocument = xComponentLoader.loadComponentFromURL(toUrl("../prova.ods"), "_blank", 0, toProperties(
+            XComponent xDocument = xComponentLoader.loadComponentFromURL(toUrl("test.ods"), "_blank", 0, toProperties(
 				"Hidden", true,
 				"UpdateDocMode", "1"
 			));
@@ -31,7 +31,7 @@ public class TestUpdateAll {
 			xQueryConnector.silentUpdateAll(xDocument);
 			
 			XStorable storable = cast(XStorable.class, xDocument);
-			storable.storeToURL(toUrl("prova1.xls"), toProperties(
+			storable.storeToURL(toUrl("test.xls"), toProperties(
 				"Overwrite", true,
 				"FilterName", "MS Excel 97"
 			));
