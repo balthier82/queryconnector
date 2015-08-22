@@ -1,3 +1,0 @@
-UNO-Type-Path: QueryConnectorService.uno.jar
-RegistrationClassName: QueryConnectorService
-Class-Path: queryconnector/JSONLibrary.jar queryconnector/LODBConnector.jar
