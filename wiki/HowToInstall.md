@@ -22,8 +22,9 @@ How to Install the extension on LibreOffice or OpenOffice installation.
 ###Instructions for use unixODBC:
 
  * There is a bug due to the fact that the libraries "libodbc.so" and "libodbcinst.so" are not loaded from the libJdbcOdbc.so library (that implements the JDBC-ODBC bridge). After some research I found that you have to set the LD_PRELOAD environment variable this way:
-
-   <code language="bash">export LD_PRELOAD=$LD_PRELOAD:/usr/lib/libodbc.so:/usr/lib/libodbcinst.so</code>
+   ```bash
+   export LD_PRELOAD=$LD_PRELOAD:/usr/lib/libodbc.so:/usr/lib/libodbcinst.so
+   ```
 
    assuming that the two files are located in /usr/lib. Without this setting OpenOffice/LibreOffice will crash.
 
