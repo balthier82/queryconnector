@@ -1,6 +1,6 @@
 #summary *How to install* instruction
 
-![alt text](https://queryconnector.googlecode.com/svn/wiki/images/QueryConnector.png "QueryConnector Logo")
+![QueryConnector](https://queryconnector.googlecode.com/svn/wiki/images/QueryConnector.png)
 
 = Introduction =
 
