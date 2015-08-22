@@ -1,4 +1,4 @@
-![Query Connector](https://queryconnector.googlecode.com/svn/wiki/images/QueryConnector.png)
+![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/wiki/images/QueryConnector.png)
 
 = Introduction =
 
