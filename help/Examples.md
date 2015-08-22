@@ -1,6 +1,6 @@
 ###Scripting Example
 
-```PureBasic
+```REALbasic
 qc = CreateUnoService("com.meserico.QueryConnectorService")
 qc.updateAll(ThisComponent)
 ```
