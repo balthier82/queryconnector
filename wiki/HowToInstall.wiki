@@ -1,5 +1,6 @@
 #summary *How to install* instruction
 
+Prova:
 ![alt text](https://queryconnector.googlecode.com/svn/wiki/images/QueryConnector.png "QueryConnector Logo")
 
 = Introduction =
