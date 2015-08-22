@@ -1,5 +1,9 @@
 #Release notes
 
+**Version 1.3.0**
+* Added a UNO Component Service to allow scripting within Basic/Javascript/etc within OpenOffice/LibreOffice or with external language like C++ or Java.
+* See Examples.
+
 **Version 1.2.1**
 * Solved same problem with the "Update All" command
 
