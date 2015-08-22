@@ -1,6 +1,6 @@
 ![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
 
-[Site](http://balthier82.github.io/queryconnector/)
+[View the Web Site](http://balthier82.github.io/queryconnector/)
 
 #Query Connector
 
