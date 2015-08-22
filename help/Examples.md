@@ -1,11 +1,11 @@
-#Scripting Example
+###Scripting Example
 
 ```basic
 qc = CreateUnoService("com.meserico.QueryConnectorService")
 	qc.updateAll(ThisComponent)
 ```
 
-#External Language Example
+###External Language Example (Java)
 
 ```java
 import ...
