@@ -6,6 +6,12 @@ Allows you to attach a query to a spreadsheet LibreOffice/OpenOffice Calc, savin
 
 **Supported languages: english, italian.**
 
+###Dowload:
+
+Current Version (1.3.0 - **Beta**): [Download](https://github.com/balthier82/queryconnector/raw/master/versions/queryconnector_1.3.0.oxt)
+
+(Compatible with OpenOffice 4.0 / LibreOffice 4.0 or higher - **Java is required**)
+
 ###Documentation:
 
 * [How To Install](https://github.com/balthier82/queryconnector/blob/master/help/HowToInstall.md)
@@ -16,12 +22,6 @@ Allows you to attach a query to a spreadsheet LibreOffice/OpenOffice Calc, savin
 
 ###For Developers:
 * [Examples](https://github.com/balthier82/queryconnector/blob/master/help/Examples.md)
-
-###Dowload:
-
-Current Version (1.3.0 - **Beta**): [Download](https://github.com/balthier82/queryconnector/raw/master/versions/queryconnector_1.3.0.oxt)
-
-(Compatible with OpenOffice 4.0 / LibreOffice 4.0 or higher - **Java is required**)
 
 ###Other:
 
