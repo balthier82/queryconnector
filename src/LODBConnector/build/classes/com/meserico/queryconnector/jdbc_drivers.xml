@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+    QueryConnector - Attach a query to a Calc document
+    Copyright (C) 2013 Enrico Giuseppe Messina
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+-->
+<drivers>
+	<driver>
+		<label><![CDATA[MySQL (Connector/J)]]></label>
+		<class><![CDATA[com.mysql.jdbc.Driver]]></class>
+		<url><![CDATA[jdbc:mysql://<host>:<port>/<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[PostgreSQL (v6.5 and earlier)]]></label>
+		<class><![CDATA[postgresql.Driver]]></class>
+		<url><![CDATA[jdbc:postgresql://<HOST>:<PORT>/<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[PostgreSQL (v7.0 and later)]]></label>
+		<class><![CDATA[org.postgresql.Driver]]></class>
+		<url><![CDATA[jdbc:postgresql://<HOST>:<PORT>/<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Xerial SQLite]]></label>
+		<class><![CDATA[org.sqlite.JDBC]]></class>
+		<url><![CDATA[jdbc:sqlite:<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Microsoft SQL Server 2005 and later (Microsoft Driver)]]></label>
+		<class><![CDATA[com.microsoft.sqlserver.jdbc.SQLServerDriver]]></class>
+		<url><![CDATA[jdbc:sqlserver://<HOST>:<PORT>[;DatabaseName=<DB>]]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Microsoft SQL Server (Microsoft Driver)]]></label>
+		<class><![CDATA[com.microsoft.jdbc.sqlserver.SQLServerDriver]]></class>
+		<url><![CDATA[jdbc:microsoft:sqlserver://<server_name>:<port>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Microsoft SQL Server (Web Logic)]]></label>
+		<class><![CDATA[weblogic.jdbc.mssqlserver4.Driver]]></class>
+		<url><![CDATA[jdbc:weblogic:mssqlserver4:<DB>@<HOST>:<PORT>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Microsoft SQL Server (jTDS Driver)]]></label>
+		<class><![CDATA[net.sourceforge.jtds.jdbc.Driver]]></class>
+		<url><![CDATA[jdbc:jtds:sqlserver://<host>[:<port>][/<database>] ]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Microsoft SQL Server (JTurbo Driver)]]></label>
+		<class><![CDATA[com.ashna.jturbo.driver.Driver]]></class>
+		<url><![CDATA[jdbc:JTurbo://<HOST>:<PORT>/<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Microsoft SQL Server (Sprinta Driver)]]></label>
+		<class><![CDATA[com.inet.tds.TdsDriver]]></class>
+		<url><![CDATA[jdbc:inetdae:<HOST>:<PORT>?database=<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[IBM DB2]]></label>
+		<class><![CDATA[COM.ibm.db2.jdbc.app.DB2Driver]]></class>
+		<url><![CDATA[jdbc:db2://<HOST>:<PORT>/<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Oracle Thin]]></label>
+		<class><![CDATA[oracle.jdbc.OracleDriver]]></class>
+		<url><![CDATA[jdbc:oracle:thin://<host>:<port>/<service>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Oracle OCI]]></label>
+		<class><![CDATA[oracle.jdbc.OracleDriver]]></class>
+		<url><![CDATA[jdbc:oracle:oci://<host>:<port>/<service>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Cloudscape]]></label>
+		<class><![CDATA[COM.cloudscape.core.JDBCDriver]]></class>
+		<url><![CDATA[jdbc:cloudscape:<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Cloudscape RMI]]></label>
+		<class><![CDATA[RmiJdbc.RJDriver]]></class>
+		<url><![CDATA[jdbc:rmi://<HOST>:<PORT>/jdbc:cloudscape:<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Firebird (JCA/JDBC Driver)]]></label>
+		<class><![CDATA[org.firebirdsql.jdbc.FBDriver]]></class>
+		<url><![CDATA[jdbc:firebirdsql:[//<HOST>[:<PORT>]/]<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[IDS Server]]></label>
+		<class><![CDATA[ids.sql.IDSDriver]]></class>
+		<url><![CDATA[jdbc:ids://<HOST>:<PORT>/conn?dsn='<ODBC_DSN_NAME>']]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Informix Dynamic Server]]></label>
+		<class><![CDATA[com.informix.jdbc.IfxDriver]]></class>
+		<url><![CDATA[jdbc:informix-sqli://<HOST>:<PORT>/<DB>:INFORMIXSERVER=<SERVER_NAME>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[InstantDB (v3.13 and earlier)]]></label>
+		<class><![CDATA[jdbc.idbDriver]]></class>
+		<url><![CDATA[jdbc:idb:<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[InstantDB (v3.14 and later)]]></label>
+		<class><![CDATA[org.enhydra.instantdb.jdbc.idbDriver]]></class>
+		<url><![CDATA[jdbc:idb:<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Interbase (InterClient Driver)]]></label>
+		<class><![CDATA[interbase.interclient.Driver]]></class>
+		<url><![CDATA[jdbc:interbase://<HOST>/<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Hypersonic SQL (v1.2 and earlier)]]></label>
+		<class><![CDATA[hSql.hDriver]]></class>
+		<url><![CDATA[jdbc:HypersonicSQL:<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Hypersonic SQL (v1.3 and later)]]></label>
+		<class><![CDATA[org.hsql.jdbcDriver]]></class>
+		<url><![CDATA[jdbc:HypersonicSQL:<DB>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Sybase SQL Anywhere (jConnect)]]></label>
+		<class><![CDATA[com.sybase.jdbc4.jdbc.SybDriver]]></class>
+		<url><![CDATA[jdbc:sybase:Tds:<host>:<port>?ServiceName=<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Sybase Adaptive Server Enterprise - ASE (jConnect)]]></label>
+		<class><![CDATA[com.sybase.jdbc4.jdbc.SybDriver]]></class>
+		<url><![CDATA[jdbc:sybase:Tds:<host>:<port>/<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Sybase Adaptive Server Enterprise - ASE (jTDS Driver)]]></label>
+		<class><![CDATA[net.sourceforge.jtds.jdbc.Driver]]></class>
+		<url><![CDATA[jdbc:jtds:sybase://<host>[:<port>][/<database>]]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[FrontBase]]></label>
+		<class><![CDATA[com.frontbase.jdbc.FBJDriver]]></class>
+		<url><![CDATA[jdbc:FrontBase://<host>:<port>/<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[H2 Database Engine Driver - Embedded]]></label>
+		<class><![CDATA[org.h2.Driver]]></class>
+		<url><![CDATA[jdbc:h2:<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[H2 Database Engine Driver - Server]]></label>
+		<class><![CDATA[org.h2.Driver]]></class>
+		<url><![CDATA[jdbc:h2:hsql://<host>:<port>/<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[HSQLDB Database Engine Driver - Embedded]]></label>
+		<class><![CDATA[org.hsqldb.jdbcDriver]]></class>
+		<url><![CDATA[jdbc:hsqldb:<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[HSQLDB Database Engine Driver - Server]]></label>
+		<class><![CDATA[org.hsqldb.jdbcDriver]]></class>
+		<url><![CDATA[jdbc:hsqldb:hsql://<host>:<port>/<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Apache Derby Client (JavaDB)]]></label>
+		<class><![CDATA[org.apache.derby.jdbc.ClientDriver]]></class>
+		<url><![CDATA[jdbc:derby:net://<host>:<port1527>/<databaseName>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Apache Derby Embedded (JavaDB)]]></label>
+		<class><![CDATA[org.apache.derby.jdbc.EmbeddedDriver]]></class>
+		<url><![CDATA[jdbc:derby:<path to database directory><;create=true>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Mimer SQL]]></label>
+		<class><![CDATA[com.mimer.jdbc.Driver]]></class>
+		<url><![CDATA[jdbc:mimer://<host>:<port>/<database>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Pervasive]]></label>
+		<class><![CDATA[com.pervasive.jdbc.v2.Driver]]></class>
+		<url><![CDATA[jdbc:pervasive://DBSERV:1583/DEMODATA]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[SAP DB]]></label>
+		<class><![CDATA[com.sap.dbtech.jdbc.DriverSapDB]]></class>
+		<url><![CDATA[jdbc:sapdb://<host>/<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Borland JDataStore]]></label>
+		<class><![CDATA[com.borland.datastore.jdbc.DataStoreDriver ]]></class>
+		<url><![CDATA[jdbc:borland:dsremote://hostName/path/storeName.jds]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[DaffodilDB]]></label>
+		<class><![CDATA[in.co.daffodil.db.rmi.RmiDaffodilDBDriver]]></class>
+		<url><![CDATA[jdbc:daffodilDB://<hostname>:<port>/<database name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Mckoi]]></label>
+		<class><![CDATA[com.mckoi.JDBCDriver]]></class>
+		<url><![CDATA[jdbc:mckoi:local://<path to db.conf>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Netezza]]></label>
+		<class><![CDATA[org.netezza.Driver]]></class>
+		<url><![CDATA[jdbc:netezza://<host>:<port>/<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[PointBase Server Universal JDBC Driver]]></label>
+		<class><![CDATA[com.pointbase.jdbc.jdbcUniversalDriver]]></class>
+		<url><![CDATA[jdbc:pointbase:server://<host>/<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[PointBase Embedded Universal JDBC Driver]]></label>
+		<class><![CDATA[com.pointbase.jdbc.jdbcUniversalDriver]]></class>
+		<url><![CDATA[jdbc:pointbase:embedded:<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[PointBase Server Net JDBC Drive]]></label>
+		<class><![CDATA[com.pointbase.net.netJDBCDriver]]></class>
+		<url><![CDATA[jdbc:pointbase:server://<host>/<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[PointBase Embedded Net JDBC Driver]]></label>
+		<class><![CDATA[com.pointbase.net.netJDBCDriver]]></class>
+		<url><![CDATA[jdbc:pointbase:embedded:<database_name>]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Teradata (Type 3)]]></label>
+		<class><![CDATA[com.ncr.teradata.TeraDriver]]></class>
+		<url><![CDATA[jdbc:teradata://DatabaseServerName/Param1,Param2,..]]></url>
+	</driver>
+	<driver>
+		<label><![CDATA[Teradata (Type 4)]]></label>
+		<class><![CDATA[com.ncr.teradata.TeraDriver]]></class>
+		<url><![CDATA[jdbc:teradata://GatewayServerName:PortNumber/DatabaseServerName/Param1,Param2,...]]></url>
+	</driver>
+        <driver>
+		<label><![CDATA[UnityJDBC]]></label>
+		<class><![CDATA[unity.jdbc.UnityDriver]]></class>
+		<url><![CDATA[jdbc:unity://<relative or absolute path to sources file>]]></url>
+	</driver>
+</drivers>
