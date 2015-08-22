@@ -30,4 +30,5 @@ It's the real extension for OpenOffice/LibreOffice that use LODBConnector to sho
 
 #####for Windows users:
 
-* download **UnixUtils** zip from (http://sourceforge.net/projects/unxutils/), extract the content to any directory and put  this directory to the enviroment **PATH** variable.
+* download **UnixUtils** zip from (http://sourceforge.net/projects/unxutils/), extract the content to any directory and put  this directory to the **PATH** enviroment variable.
+* download **mingw32-make** from (http://sourceforge.net/projects/mingw/files/MinGW/Extension/make/) (example **mingw32-make-3.81-xxxxxxxx.tar.gz**), unzip it to any directory and put this directory to the **PATH** enviroment variable. * Rename the **mingw32-make.exe** in **make.exe**
