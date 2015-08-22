@@ -17,33 +17,33 @@ A brief explanation on how to use the extension
  3. In the window that appears, click Start <br><br>
  4. Select the method by which you want to connect to the database: *JDBC* or *ODBC*
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step3.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step3.png)
 
  5a. Choosing the direct connection via JDBC, you have to choose the driver and specify the connection parameters
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step4.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step4.png)
 
  5b. If you decide, instead, to use ODBC, click on the *Select ODBC source ...* button and you will see the following dialog box:
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step5.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step5.png)
 
 ...that will allow you to select the ODBC source from those configured at the user level, system level or through the use of `*`.dsn files.
 
  6. At the next step, you have to enter the query:
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step6.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step6.png)
 
  7. ...after, click Next and you will see a preview of the result:
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step7.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step7.png)
 
  8. Finally, check the checkbox in the *Settings* area if you want to store the connection information inside the document <font color="red">(THE INFORMATION IS STORED WITHOUT ENCRYPTION, FOR NOW)</font>
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step8.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step8.png)
 
  9. Click *Finish* and you'll see the result of the query loaded on the spreadsheet
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step9.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step9.png)
 
 
 Enjoy! :D
