@@ -1,14 +1,14 @@
-#summary *How to Use* the extension
+#*How to Use* the extension
 
-= Introduction =
+#Introduction
 
 A brief explanation on how to use the extension
 
-= Details =
+#Details
 
  1. Select the starting cell of the spreadsheet where the result of the query will be inserted.
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step1.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step1.png)
 
  2. Click on *Data > Query > Attach data...*
 
