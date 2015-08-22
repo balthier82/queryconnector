@@ -1,4 +1,4 @@
-#summary *How to install* instruction
+*How to install* instruction
 
 ![QueryConnector](https://queryconnector.googlecode.com/svn/wiki/images/QueryConnector.png)
 
