@@ -1,5 +1,7 @@
 ###Scripting Example
 
+This script can be used inside a Basic macro:
+
 ```vbnet
 qc = CreateUnoService("com.meserico.QueryConnectorService")
 qc.updateAll(ThisComponent)
