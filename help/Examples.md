@@ -50,7 +50,7 @@ public class TestUpdateAll {
 	
 	public static PropertyValue[] toProperties(Object... props){
 		if(props.length % 2 != 0)
-			throw new IllegalArgumentException("The argument count must be even.");
+			throw new IllegalArgumentException("The arguments count must be even.");
 		
 		PropertyValue[] properties = new PropertyValue[props.length/2];
 		for(int i=0, j=0; i<props.length; i+=2, j++){
