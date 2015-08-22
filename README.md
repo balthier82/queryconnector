@@ -1,3 +1,5 @@
+![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
+
 #Query Connector
 
 * [How To Install](https://github.com/balthier82/queryconnector/blob/master/help/HowToInstall.md)
