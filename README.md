@@ -22,5 +22,5 @@ Current Version (1.2.1 - **Beta**): [Download](https://github.com/balthier82/que
 
 ###Other:
 
- * [Apache OpenOffice Extension] (http://extensions.openoffice.org/en/project/queryconnector)
- * [LibreOffice Extension] (http://extensions.libreoffice.org/extension-center/queryconnector)
+ * [Apache OpenOffice Extension!] (http://extensions.openoffice.org/en/project/queryconnector)
+ * [LibreOffice Extension!] (http://extensions.libreoffice.org/extension-center/queryconnector)
