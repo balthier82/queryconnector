@@ -1,10 +1,10 @@
 ![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/wiki/images/QueryConnector.png)
 
-= Introduction =
+#Introduction
 
 How to Install the extension on LibreOffice or OpenOffice installation.
 
-= Details =
+#Details
 
 *On Any Platform:*
 
@@ -19,7 +19,7 @@ How to Install the extension on LibreOffice or OpenOffice installation.
 
  # Make sure that the package *libreoffice-java-common* is installed, otherwise the extension will not be registered properly.
 
-===Instructions for use unixODBC:===
+###Instructions for use unixODBC:
 
  * There is a bug due to the fact that the libraries "libodbc.so" and "libodbcinst.so" are not loaded from the libJdbcOdbc.so library (that implements the JDBC-ODBC bridge). After some research I found that you have to set the LD_PRELOAD environment variable this way:
 
