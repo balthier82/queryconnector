@@ -1,5 +1,3 @@
-#*How to Use* the extension
-
 #Introduction
 
 A brief explanation on how to use the extension
