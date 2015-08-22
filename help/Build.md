@@ -30,4 +30,4 @@ It's the real extension for OpenOffice/LibreOffice that use LODBConnector to sho
 
 #####for Windows users:
 
-* download **UnixUtils** binaries from (http://sourceforge.net/projects/unxutils/) and put theme to the PATH.
+* download **UnixUtils** zip from (http://sourceforge.net/projects/unxutils/), extract the content to any directory and put  this directory to the enviroment **PATH** variable.
