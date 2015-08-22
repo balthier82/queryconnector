@@ -18,6 +18,7 @@ It's the real extension for OpenOffice/LibreOffice that use LODBConnector to sho
 #####Pre-build configuration:
 
 [LibreOffice SDK Installation and Configuration](http://api.libreoffice.org/docs/install.html)
+
 [OpenOffice SDK](http://www.openoffice.org/download/sdk/)
 
 #####Build instruction:
