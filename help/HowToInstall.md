@@ -6,10 +6,10 @@ How to Install the extension on LibreOffice or OpenOffice installation.
 
 *On Any Platform:*
 
- * Go to _Tools -> Extension Manager_ <br>
- * Click on *Add...* <br>
- * Select *queryconnector.oxt* <br>
- * Accept the prompted license <br>
+ * Go to **Tools -> Extension Manager** 
+ * Click on **Add...**
+ * Select **queryconnector.oxt**
+ * Accept the prompted license 
  * Restart OpenOffice/LibreOffice
  * Enjoy! :D
 
