@@ -12,7 +12,7 @@ A brief explanation on how to use the extension
 
  2. Click on *Data > Query > Attach data...*
 
-https://queryconnector.googlecode.com/svn/wiki/images/howtouse_step2.png
+![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step2.png)
 
  3. In the window that appears, click Start <br><br>
  4. Select the method by which you want to connect to the database: *JDBC* or *ODBC*
