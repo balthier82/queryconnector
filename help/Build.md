@@ -20,7 +20,7 @@ It's the real extension for OpenOffice/LibreOffice that use LODBConnector to sho
 Before build it is necessary to install the OpenOffice/LibreOffice sdk.
 You can find more information in the following links:
 
-* [LibreOffice SDK Installation and Configuration](http://api.libreoffice.org/docs/install.html)
+* [LibreOffice SDK](http://api.libreoffice.org/docs/install.html)
 * [OpenOffice SDK](http://www.openoffice.org/download/sdk/)
 
 #####Build instruction:
