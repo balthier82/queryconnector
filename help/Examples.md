@@ -1,6 +1,6 @@
 ###Scripting Example
 
-```visualbasic
+```vbnet
 qc = CreateUnoService("com.meserico.QueryConnectorService")
 qc.updateAll(ThisComponent)
 ```
