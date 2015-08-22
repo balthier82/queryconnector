@@ -6,11 +6,11 @@ A brief explanation on how to use the extension
 
 #Details
 
- 1. Select the starting cell of the spreadsheet where the result of the query will be inserted.
+ 1) Select the starting cell of the spreadsheet where the result of the query will be inserted.
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step1.png)
 
- 2. Click on *Data > Query > Attach data...*
+ 2) Click on *Data > Query > Attach data...*
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step2.png)
 
