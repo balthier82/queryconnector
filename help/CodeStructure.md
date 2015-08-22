@@ -1,3 +1,0 @@
-#The code structure (Coming soon)
-
-Coming soon...
