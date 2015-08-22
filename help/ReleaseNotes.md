@@ -1,4 +1,4 @@
-#summary Release notes
+#Release notes
 
 *Version 1.2.1*
  # Solved same problem with the "Update All" command
