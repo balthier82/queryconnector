@@ -1,5 +1,3 @@
-![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
-
 #Introduction
 
 How to Install the extension on LibreOffice or OpenOffice installation.
