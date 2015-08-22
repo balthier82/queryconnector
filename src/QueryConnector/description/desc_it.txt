@@ -1,0 +1,1 @@
+Permette di agganciare una query ad un foglio di calcolo OpenOffice/LibreOffice Calc. Salvando le informazioni sul foglio di calcolo stesso per futuri aggiornamenti dei dati. Non necessita di file di OpenOffice/LibreOffice Base per effettuare il collegamento della query. (Autore: Enrico Messina)

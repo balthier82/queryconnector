@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+	QueryConnector - Attach a query to a Calc document
+    Copyright (C) 2013 Enrico Giuseppe Messina
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+-->
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+    <node oor:name="OfficeMenuBarMerging">
+      <node oor:name="com.meserico.queryconnector-ext" oor:op="replace">
+		<node oor:name="s1" oor:op="replace">
+			<prop oor:name="MergePoint">
+				<value>.uno:DataMenu\.uno:DataAreaRefresh</value>
+			</prop>
+			<prop oor:name="MergeCommand">
+				<value>AddAfter</value>
+			</prop>
+			<prop oor:name="MergeFallback">
+				<value>AddPath</value>
+			</prop>
+			<prop oor:name="MergeContext" oor:type="xs:string">
+				<value>com.sun.star.sheet.SpreadsheetDocument</value>
+			</prop>
+			<node oor:name="MenuItems">
+				<node oor:name="m1" oor:op="replace">
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>private:separator</value>
+					</prop>
+				</node>
+				<node oor:name="m2" oor:op="replace">
+					<prop oor:name="Title" oor:type="xs:string">
+					  <value/>
+					  <value xml:lang="en">Query</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+					  <value>_self</value>
+					</prop>
+					<prop oor:name="ImageIdentifier" oor:type="xs:string">
+					  <value/>
+					</prop>
+					<prop oor:name="Context" oor:type="xs:string"> 
+						<value>com.sun.star.sheet.SpreadsheetDocument</value> 
+					</prop>
+					<node oor:name="Submenu">
+					  <node oor:name="m3" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>vnd.sun.star.script:queryconnector.QueryConnector.attach?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						</prop>
+						<prop oor:name="ImageIdentifier" oor:type="xs:string">
+						  <value>%origin%/images/noimage</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Attach data...</value>
+						  <value xml:lang="it">Aggancia dati...</value>
+						</prop>
+					  </node>
+					  <node oor:name="m4" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>vnd.sun.star.script:queryconnector.QueryConnector.update?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						</prop>
+						<prop oor:name="ImageIdentifier" oor:type="xs:string">
+						  <value/>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Update</value>
+						  <value xml:lang="it">Aggiorna</value>
+						</prop>
+					  </node>
+					  <node oor:name="m5" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>private:separator</value>
+						</prop>
+					  </node>
+					  <node oor:name="m6" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>vnd.sun.star.script:queryconnector.QueryConnector.updateAll?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						</prop>
+						<prop oor:name="ImageIdentifier" oor:type="xs:string">
+						  <value/>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Update All</value>
+						  <value xml:lang="it">Aggiorna tutto</value>
+						</prop>
+					  </node>
+					  <node oor:name="m7" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>private:separator</value>
+						</prop>
+					  </node>
+					  <node oor:name="m8" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>vnd.sun.star.script:queryconnector.QueryConnector.info?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						</prop>
+						<prop oor:name="ImageIdentifier" oor:type="xs:string">
+						  <value/>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Show Info</value>
+						  <value xml:lang="it">Mostra informazioni</value>
+						</prop>
+					  </node>
+					</node>
+				</node>
+			  </node>
+			</node>
+        </node>
+     </node>
+  </node>
+</oor:component-data>

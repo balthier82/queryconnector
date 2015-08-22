@@ -1,0 +1,16 @@
+#ifndef INCLUDED_COM_MESERICO_QUERYCONNECTORSERVICE_IDL
+#define INCLUDED_COM_MESERICO_QUERYCONNECTORSERVICE_IDL
+
+#include <XQueryConnectorService.idl>
+
+/// com
+module com {
+    ///  meserico
+    module meserico {
+        service QueryConnectorService: XQueryConnectorService;
+    };
+};
+
+#endif
+
+/* vim:set shiftwidth=4 softtabstop=4 expandtab: */

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	QueryConnector - Attach a query to a Calc document
+    Copyright (C) 2013 Enrico Giuseppe Messina
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+-->
+<parcel language="Java" xmlns:parcel="scripting.dtd">
+    <script language="Java">
+		<locale lang="en">
+            <displayname value="QueryConnector"/>
+            <description>
+                Starts the query connector wizard
+            </description>
+        </locale>
+        <locale lang="it">
+            <displayname value="QueryConnector"/>
+            <description>
+                Avvia il processo di aggancio di una query al foglio di calcolo
+            </description>
+        </locale>
+        <functionname value="QueryConnector.attach"/>
+        <logicalname value="QueryConnector.attach"/>
+        <languagedepprops>
+          <prop name="classpath" value="queryconnector.jar:LODBConnector.jar:JSONLibrary.jar"/>
+        </languagedepprops>
+    </script>
+	<script language="Java">
+		<locale lang="en">
+            <displayname value="QueryConnector"/>
+            <description>
+				Update data of an attached query
+            </description>
+        </locale>
+        <locale lang="it">
+            <displayname value="QueryConnector"/>
+            <description>
+                Aggiorna i dati di una query gia' agganciata al foglio di calcolo
+            </description>
+        </locale>
+        <functionname value="QueryConnector.update"/>
+        <logicalname value="QueryConnector.update"/>
+        <languagedepprops>
+          <prop name="classpath" value="queryconnector.jar:LODBConnector.jar:JSONLibrary.jar"/>
+        </languagedepprops>
+    </script>
+	<script language="Java">
+		<locale lang="en">
+            <displayname value="QueryConnector"/>
+            <description>
+				Update data of all attached query
+            </description>
+        </locale>
+        <locale lang="it">
+            <displayname value="QueryConnector"/>
+            <description>
+                Aggiorna i dati di tutte le query agganciate al foglio di calcolo
+            </description>
+        </locale>
+        <functionname value="QueryConnector.updateAll"/>
+        <logicalname value="QueryConnector.updateAll"/>
+        <languagedepprops>
+          <prop name="classpath" value="queryconnector.jar:LODBConnector.jar:JSONLibrary.jar"/>
+        </languagedepprops>
+    </script>
+	<script language="Java">
+		<locale lang="en">
+            <displayname value="QueryConnector"/>
+            <description>
+				Show connection info
+            </description>
+        </locale>
+        <locale lang="it">
+            <displayname value="QueryConnector"/>
+            <description>
+                Mostra le informazioni di connessione al db
+            </description>
+        </locale>
+        <functionname value="QueryConnector.info"/>
+        <logicalname value="QueryConnector.info"/>
+        <languagedepprops>
+          <prop name="classpath" value="queryconnector.jar:LODBConnector.jar:JSONLibrary.jar"/>
+        </languagedepprops>
+    </script>
+</parcel>
