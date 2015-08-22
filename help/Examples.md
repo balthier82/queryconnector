@@ -7,10 +7,12 @@ qc.updateAll(ThisComponent)
 
 ###External Language Example (Java)
 
+we suppose that **text.ods** is a spreadsheet that contains at least one query attached:
+
 ```java
 import ...
 
-public class TestUpdateAll {
+public class UpdateAll {
 	public static void main(String[] argv){
 		try {
             XComponentContext xContext = Bootstrap.bootstrap();
@@ -65,4 +67,18 @@ public class TestUpdateAll {
 		return UnoRuntime.queryInterface(klass, instance);
 	} 
 }
+```
+an example to how compile and run the java example:
+
+```bat
+set JAVA_PATH32="<java sdk dir>\bin"
+set JAVA=%JAVA_PATH32%\java
+set JAVAC=%JAVA_PATH32%\javac
+
+set OFFICE_PATH=<path to libreoffice/openoffice installation>
+set UNO_CLASSES_PATH=%OFFICE_PATH%\program\classes
+set CLASS_PATH=%UNO_CLASSES_PATH%\java_uno.jar;%UNO_CLASSES_PATH%\unoloader.jar;%UNO_CLASSES_PATH%\unoil.jar;%UNO_CLASSES_PATH%\juh.jar;
+
+%JAVAC% -cp %CLASS_PATH% -source 1.6 UpdateAll.java
+%JAVA% -cp %CLASS_PATH%;.\ UpdateAll
 ```
