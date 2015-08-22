@@ -21,7 +21,7 @@ A brief explanation on how to use the extension
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step4.png)
 
-> You have to ensure that the JDBC driver that you intend to use is installed and configured correctly. The .jar file of the driver have to be inserted on the LibreOffice/OpenOffice classpath. Go to **Tools->Options->Advanced->** then click on the
+> You have to ensure that the JDBC driver that you intend to use is installed and configured correctly. The .jar file of the driver have to be inserted on the LibreOffice/OpenOffice classpath. Go to **Tools->Options->Advanced** then click on the
 **Class Path** button. In the shown dialog, click on the **Add Archive** button and select the .jar file that contain the driver.
 
  5b) If you decide, instead, to use ODBC, click on the *Select ODBC source ...* button and you will see the following dialog box:
