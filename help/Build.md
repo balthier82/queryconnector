@@ -22,6 +22,9 @@ It's the real extension for OpenOffice/LibreOffice that use LODBConnector to sho
 
 #####Build instruction:
 
-* Open the prompt command windows/bash shell to the QueryConnector directory:
-* 
+* Open the prompt command windows/bash shell to the **QueryConnector** directory
+* (Only for windows) Execute the **setsdkenv_windows.bat** that is located inside the sdk directory
+* run **make**
+* (you can clean the compiled file with **make clean**)
+* The output file is located in **out/bin/**
 
