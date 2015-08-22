@@ -10,7 +10,7 @@ qc.updateAll(ThisComponent)
 ###External Language Example (Java)
 
 This example open a calc document (**test.ods**), update all the queries attached
-and save it as an Excel file (.xls).
+and save it as an Excel file (**test.xls**).
 
 ```java
 import com.sun.star.comp.helper.Bootstrap;
