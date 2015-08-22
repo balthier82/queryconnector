@@ -1,5 +1,3 @@
-= Introduction =
-
 ![QueryConnector](https://queryconnector.googlecode.com/svn/wiki/images/QueryConnector.png)
 
 = Introduction =
