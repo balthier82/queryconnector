@@ -1,4 +1,4 @@
-#summary Some screenshots
+#Some screenshots
 
 ![Screenshot 1](https://raw.githubusercontent.com/balthier82/queryconnector/master/wiki/images/howtouse_step2.png)
 ![Screenshot 2](https://raw.githubusercontent.com/balthier82/queryconnector/master/wiki/images/howtouse_step3.png)
