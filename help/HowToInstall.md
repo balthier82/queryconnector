@@ -1,4 +1,4 @@
-![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/wiki/images/QueryConnector.png)
+![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
 
 #Introduction
 
