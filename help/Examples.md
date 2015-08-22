@@ -12,7 +12,19 @@ qc.updateAll(ThisComponent)
 we suppose that **text.ods** is a spreadsheet that contains at least one query attached:
 
 ```java
-import ...
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.lang.XMultiComponentFactory;
+import com.sun.star.uno.XComponentContext;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.beans.PropertyValue;
+import com.sun.star.lang.XComponent;
+import com.meserico.XQueryConnectorService;
+import com.sun.star.frame.XStorable;
+import com.sun.star.container.XNameAccess;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class UpdateAll {
 	public static void main(String[] argv){
