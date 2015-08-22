@@ -1,6 +1,6 @@
 #How to Build
 
-The queryconnector project is composed by two parts:
+The queryconnector project is composed of two parts:
 
 * LODBConnector
 * QueryConnector
