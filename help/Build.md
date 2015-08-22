@@ -28,6 +28,6 @@ It's the real extension for OpenOffice/LibreOffice that use LODBConnector to sho
 * (you can clean the compiled file with **make clean**)
 * The output file is located in **out/bin/**
 
-for Windows users:
+#####for Windows users:
 
 * download **UnixUtils** binaries from (http://sourceforge.net/projects/unxutils/) and put theme to the PATH.
