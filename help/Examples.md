@@ -20,7 +20,6 @@ public class TestUpdateAll {
 			Object desktop = xServiceManager.createInstanceWithContext("com.sun.star.frame.Desktop", xContext);
             XComponentLoader xComponentLoader = cast(XComponentLoader.class, desktop );
 			
-			//printFilterNames(xContext);
 			
             XComponent xDocument = xComponentLoader.loadComponentFromURL(toUrl("../prova.ods"), "_blank", 0, toProperties(
 				"Hidden", true,
@@ -47,16 +46,6 @@ public class TestUpdateAll {
 		StringBuffer sLoadUrl = new StringBuffer("file:///");
 		sLoadUrl.append(new java.io.File(fName).getCanonicalPath().replace('\\', '/').replace("#", "%23"));
 		return sLoadUrl.toString();
-	}
-	
-	public static void printFilterNames(XComponentContext xContext) throws Exception{
-		XMultiComponentFactory xServiceManager = xContext.getServiceManager();
-		Object filterFactory = xServiceManager.createInstanceWithContext("com.sun.star.document.FilterFactory", xContext);
-		XNameAccess xNameAccess = cast(XNameAccess.class, filterFactory);
-		String[] names = xNameAccess.getElementNames();
-		List<String> nameList = Arrays.asList(names);
-		Collections.sort(nameList);
-		System.out.println(nameList);
 	}
 	
 	public static PropertyValue[] toProperties(Object... props){
