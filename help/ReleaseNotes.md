@@ -1,7 +1,7 @@
 #Release notes
 
-*Version 1.2.1*
- # Solved same problem with the "Update All" command
+**Version 1.2.1**
+* Solved same problem with the "Update All" command
 
 *Version 1.2.0*
  # Add support for multi query on different sheets with the "Update All" menu item
