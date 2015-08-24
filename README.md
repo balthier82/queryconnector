@@ -4,7 +4,7 @@
 
 #Query Connector
 
-Allows you to attach a query to a spreadsheet LibreOffice/OpenOffice Calc, saving the connection information on the spreadsheet itself for future data updates. It does not requires LibreOffice/OpenOffice Base or registering a file *.odb to connect the query. 
+This extension allows you to attach a query to a spreadsheet LibreOffice/OpenOffice Calc, saving the connection information on the spreadsheet itself for future data updates. It does not requires LibreOffice/OpenOffice Base or registering a file *.odb to connect the query. 
 
 **Supported languages: english, italian.**
 
