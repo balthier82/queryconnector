@@ -32,4 +32,4 @@ How to Install the extension on LibreOffice or OpenOffice installation.
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/java/default/lib/i386/client
    ```
 
- * If there is an error called *Invalid Handle* using the ODBC driver libmyodbc.so for MySQL, the problem is not the extension, but the driver itself. Other drivers are working properly.
+ * If there is an error called *Invalid Handle* using the ODBC driver libmyodbc.so for MySQL, the problem is not the extension, but the driver itself. Other drivers work properly.
