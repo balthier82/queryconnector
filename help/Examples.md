@@ -82,7 +82,7 @@ public class UpdateAll {
 	} 
 }
 ```
-an example on how compile and run the java example:
+an example on how compile and run the java example (for windows):
 
 ```bat
 set JAVA_PATH32="<java sdk dir>\bin"
