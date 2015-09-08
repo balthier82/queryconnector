@@ -1,5 +1,8 @@
 #Release notes
 
+**Version 1.3.1**
+* Try to suppress the **IllegalArgumentException** exception that occurrs using the use of the extension. Please report an issue if the problem persists.
+
 **Version 1.3.0**
 * Added a **UNO Component Service** to allow scripting with Basic/Javascript/etc within OpenOffice/LibreOffice or with external language like C++ or Java.
 * See [Examples](https://github.com/balthier82/queryconnector/blob/master/help/Examples.md).
