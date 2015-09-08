@@ -30,6 +30,8 @@ Current Version (1.3.0 - **Beta**): [Download](https://github.com/balthier82/que
  * [Apache OpenOffice Extension] (http://extensions.openoffice.org/en/project/queryconnector)
  * [LibreOffice Extension] (http://extensions.libreoffice.org/extension-center/queryconnector)
 
+-------------------------------------------------------------------------------------------------------
+
 ####Note:
 
 **Starting from 1.3.1 version I think that exception's problem during the execution of any of the menù action provided within the extension has been definitely solved. (Example: (http://it.libreofficeforum.org/node/7257)). Unfortunately, this error, doesn't occurs sistematically and it's hard to find and fix. Please report an issue if the problem persists.**
