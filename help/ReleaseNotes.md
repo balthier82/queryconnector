@@ -1,7 +1,7 @@
 #Release notes
 
 **Version 1.3.1**
-* Suppressed the **IllegalArgumentException** exception that occurrs using the extension.
+* Resolved the **IllegalArgumentException** exception that occurrs using the extension.
 
 **Version 1.3.0**
 * Added a **UNO Component Service** to allow scripting with Basic/Javascript/etc within OpenOffice/LibreOffice or with external language like C++ or Java.
