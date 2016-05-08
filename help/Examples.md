@@ -91,7 +91,7 @@ set JAVAC=%JAVA_PATH32%\javac
 
 set OFFICE_PATH=<path to libreoffice/openoffice installation>
 set UNO_CLASSES_PATH=%OFFICE_PATH%\program\classes
-set CLASS_PATH=%UNO_CLASSES_PATH%\java_uno.jar;%UNO_CLASSES_PATH%\unoloader.jar;%UNO_CLASSES_PATH%\unoil.jar;%UNO_CLASSES_PATH%\juh.jar;<path to the QueryConnectorService.uno.jar>
+set CLASS_PATH=%UNO_CLASSES_PATH%\java_uno.jar;%UNO_CLASSES_PATH%\unoloader.jar;%UNO_CLASSES_PATH%\unoil.jar;%UNO_CLASSES_PATH%\juh.jar;<path to the querconnector.jar>
 
 %JAVAC% -cp %CLASS_PATH% -source 1.6 UpdateAll.java
 %JAVA% -cp %CLASS_PATH%;.\ UpdateAll
