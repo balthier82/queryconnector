@@ -1,5 +1,8 @@
 #Release notes
 
+**Version 1.4**
+* Major extension revision.
+
 **Version 1.3.1**
 * Resolved the **IllegalArgumentException** exception that occurrs using the extension menù action.
 
