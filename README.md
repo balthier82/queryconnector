@@ -1,4 +1,4 @@
-<sub>Last update: 08 May 2016<sub>
+<sub>**Last update**: 08 May 2016<sub>
 
 ![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
 
