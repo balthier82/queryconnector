@@ -34,4 +34,4 @@ Current Version (1.4 - **Beta**): [Download](https://github.com/balthier82/query
 
 ####Note:
 
-**Starting from 1.3.1 version, I think that exception problem during the execution of any of the menù action provided within the extension has been definitely solved. (Example: (http://it.libreofficeforum.org/node/7257)). Unfortunately, this error, doesn't occurs sistematically and it's hard to find and fix. Please report an issue if the problem persists.**
+**Starting from 1.4 version, I think that exception problem during the execution of any of the menù action provided within the extension has been definitely solved. (Example: (http://it.libreofficeforum.org/node/7257)). Unfortunately, this error, doesn't occurs sistematically and it's hard to find and fix. Please report an issue if the problem persists.**
