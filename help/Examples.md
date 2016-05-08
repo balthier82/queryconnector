@@ -82,8 +82,8 @@ public class UpdateAll {
 	} 
 }
 ```
-(download the **jars/queryconnector.jar** to allow the compilation performs correctly)
-an example on how compile and run the java example (for windows):
+(download the **jars/queryconnector.jar** to allow the compilation performs correctly).
+Following an example on how compile and run the java example (for windows):
 
 ```bat
 rem java must be 32 bit version
