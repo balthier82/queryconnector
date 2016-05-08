@@ -3,11 +3,11 @@
 
 #include <XQueryConnectorService.idl>
 
-/// com
 module com {
-    ///  meserico
     module meserico {
-        service QueryConnectorService: XQueryConnectorService;
+		module queryconnector {
+			service QueryConnectorService: XQueryConnectorService;
+		};
     };
 };
 

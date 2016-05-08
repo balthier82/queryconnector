@@ -57,10 +57,10 @@
 					<node oor:name="Submenu">
 					  <node oor:name="m3" oor:op="replace">
 						<prop oor:name="URL" oor:type="xs:string">
-						  <value>vnd.sun.star.script:queryconnector.QueryConnector.attach?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						  <value>service:com.meserico.QueryConnectorService?attach</value>
 						</prop>
 						<prop oor:name="ImageIdentifier" oor:type="xs:string">
-						  <value>%origin%/images/noimage</value>
+						  <value/>
 						</prop>
 						<prop oor:name="Target" oor:type="xs:string">
 						  <value>_self</value>
@@ -73,7 +73,7 @@
 					  </node>
 					  <node oor:name="m4" oor:op="replace">
 						<prop oor:name="URL" oor:type="xs:string">
-						  <value>vnd.sun.star.script:queryconnector.QueryConnector.update?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						  <value>service:com.meserico.QueryConnectorService?update</value>
 						</prop>
 						<prop oor:name="ImageIdentifier" oor:type="xs:string">
 						  <value/>
@@ -94,7 +94,7 @@
 					  </node>
 					  <node oor:name="m6" oor:op="replace">
 						<prop oor:name="URL" oor:type="xs:string">
-						  <value>vnd.sun.star.script:queryconnector.QueryConnector.updateAll?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						  <value>service:com.meserico.QueryConnectorService?updateAll</value>
 						</prop>
 						<prop oor:name="ImageIdentifier" oor:type="xs:string">
 						  <value/>
@@ -115,7 +115,7 @@
 					  </node>
 					  <node oor:name="m8" oor:op="replace">
 						<prop oor:name="URL" oor:type="xs:string">
-						  <value>vnd.sun.star.script:queryconnector.QueryConnector.info?language=Java&amp;location=user:uno_packages/queryconnector.oxt</value>
+						  <value>service:com.meserico.QueryConnectorService?info</value>
 						</prop>
 						<prop oor:name="ImageIdentifier" oor:type="xs:string">
 						  <value/>

@@ -17,6 +17,7 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
+ 
 import com.sun.star.script.provider.XScriptContext;
 
 import com.sun.star.uno.UnoRuntime;
@@ -96,6 +97,7 @@ import com.sun.star.container.XIndexAccess;
 import com.sun.star.drawing.XDrawPageSupplier;
 import com.sun.star.drawing.XDrawPage;
 import com.sun.star.comp.helper.Bootstrap;
+import javax.swing.JOptionPane;
 
 public class QueryConnector implements WizardListener
 {
@@ -160,85 +162,34 @@ public class QueryConnector implements WizardListener
 	
 	//########################################################################################
 	
-	/** Gestione degli script **/
-
-    public static void attach(XScriptContext ctxt, ActionEvent e)
-        throws Exception
-    {
-        QueryConnector.attach(ctxt);
-    }
-
-    public static void attach(XScriptContext ctxt) throws Exception {
-		QueryConnector connector = null;
+	/** Gestione degli eventi **/
+	public static void attach(XComponentContext componentContext, XModel model) {
+		QueryConnector connector = null; 
 		try{
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-			connector = new QueryConnector(ctxt);
+			connector = new QueryConnector(model, componentContext);
 			connector.attach();
 		}catch(Exception ex){
 			if(connector != null)
 				connector.enableEdit();
 			ExceptionDialog.show(null, ex);
 		}
-    }
+	}
 	
-	public static void update(XScriptContext ctxt, ActionEvent e)
-        throws Exception
-    {
-        QueryConnector.update(ctxt);
-    }
-
-    public static void update(XScriptContext ctxt) throws Exception {
-		QueryConnector connector = null;
+	public static void update(XComponentContext componentContext, XModel model) {
+		QueryConnector connector = null; 
 		try{
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-			connector = new QueryConnector(ctxt);
+			connector = new QueryConnector(model, componentContext);
 			connector.update();
 		}catch(Exception ex){
 			if(connector != null)
 				connector.enableEdit();
 			ExceptionDialog.show(null, ex);
 		}
-    }
+	}
 	
-	public static void info(XScriptContext ctxt, ActionEvent e)
-        throws Exception
-    {
-        QueryConnector.update(ctxt);
-    }
-
-    public static void info(XScriptContext ctxt) throws Exception {
-		QueryConnector connector = null;
-		try{
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-			connector = new QueryConnector(ctxt);
-			connector.info();
-		}catch(Exception ex){
-			if(connector != null)
-				connector.enableEdit();
-			ExceptionDialog.show(null, ex);
-		}
-    }
-	
-	public static void updateAll(XScriptContext ctxt, ActionEvent e)
-        throws Exception
-    {
-        QueryConnector.updateAll(ctxt);
-    }
-
-    public static void updateAll(XScriptContext ctxt) throws Exception {
-		QueryConnector connector = null; 
-		try{
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-			connector = new QueryConnector(ctxt);
-			connector.updateAll();
-		}catch(Exception ex){
-			if(connector != null)
-				connector.enableEdit();
-			ExceptionDialog.show(null, ex);
-		}
-    }
-	
-	public static void updateAllThroughModel(XComponentContext componentContext, XModel model) {
+	public static void updateAll(XComponentContext componentContext, XModel model) {
 		QueryConnector connector = null; 
 		try{
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -251,7 +202,20 @@ public class QueryConnector implements WizardListener
 		}
 	}
 	
-	public static void silentUpdateAllThroughModel(XComponentContext componentContext, XModel model) {
+	public static void info(XComponentContext componentContext, XModel model) {
+		QueryConnector connector = null; 
+		try{
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			connector = new QueryConnector(model, componentContext);
+			connector.info();
+		}catch(Exception ex){
+			if(connector != null)
+				connector.enableEdit();
+			ExceptionDialog.show(null, ex);
+		}
+	}
+	
+	public static void silentUpdateAll(XComponentContext componentContext, XModel model) {
 		QueryConnector connector = null; 
 		try{
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());

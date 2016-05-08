@@ -1,15 +1,16 @@
 #ifndef INCLUDED_COM_MESERICO_XQUERYCONNECTORSERVICE_IDL
 #define INCLUDED_COM_MESERICO_XQUERYCONNECTORSERVICE_IDL
 
+#include <com/sun/star/uno/XInterface.idl>
 
-/// com
 module com {
-    ///  meserico
     module meserico {
-        interface XQueryConnectorService {
-            void updateAll( [in] any aInstance );
-			void silentUpdateAll( [in] any aInstance );
-        };
+		module queryconnector {
+			interface XQueryConnectorService {
+				void updateAll( [in] any aInstance );
+				void silentUpdateAll( [in] any aInstance );
+			};
+		};
     };
 };
 

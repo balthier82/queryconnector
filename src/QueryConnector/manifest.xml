@@ -21,6 +21,6 @@
 <manifest:manifest xmlns:manifest="http://openoffice.org/2001/manifest">
  <manifest:file-entry manifest:media-type="application/vnd.sun.star.framework-script" manifest:full-path="queryconnector"/>
  <manifest:file-entry manifest:media-type="application/vnd.sun.star.configuration-data" manifest:full-path="Addons.xcu"/>
- <manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-typelibrary;type=RDB" manifest:full-path="QueryConnectorService.uno.rdb"/> 
- <manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-components" manifest:full-path="QueryConnectorService.components"/>
+ <manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-typelibrary;type=RDB" manifest:full-path="queryconnector.uno.rdb"/> 
+ <manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-components" manifest:full-path="queryconnector.components"/>
 </manifest:manifest>

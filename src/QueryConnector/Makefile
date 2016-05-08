@@ -23,159 +23,127 @@ SETTINGS=makefiles
 include $(SETTINGS)/settings.mk
 include $(SETTINGS)/std.mk
 
-# Define non-platform/compiler specific settings
-SAMPLE_NAME=queryconnector
-SAMPLE_CLASS_OUT = $(OUT_CLASS)/$(SAMPLE_NAME)
-SAMPLE_GEN_OUT = $(OUT_MISC)
+#utility variables
+EMPTY=
+SPACE=$(EMPTY) $(EMPTY)
 
-SCRIPT_NAME=queryconnector
-SCRIPT_CLASS_OUT=$(SAMPLE_CLASS_OUT)/$(SCRIPT_NAME)
-SCRIPT_GEN_OUT=$(SAMPLE_GEN_OUT)/$(SCRIPT_NAME)
-SCRIPT_JAR_NAME=$(SCRIPT_NAME).jar
-SCRIPT_JAR=$(SAMPLE_CLASS_OUT)/$(SCRIPT_JAR_NAME)
-SCRIPT_PACKAGE = $(OUT_BIN)/$(SCRIPT_NAME).$(UNOOXT_EXT)
-SCRIPT_PACKAGE_URL = $(subst \\,\,"$(COMP_PACKAGE_DIR)$(PS)$(SCRIPT_NAME).$(UNOOXT_EXT)")
-SCRIPT_REGISTERFLAG=$(SCRIPT_GEN_OUT)$(PS)$(SCRIPT_NAME)_register_scriptpkg.flag
+#commands
+JAVAC=$(OO_SDK_JAVA_HOME)/bin/javac
 
+#Directories
+OUT_DIR=out
+OUT_CLASS=$(OUT_DIR)/class
+OUT_BIN=$(OUT_DIR)/bin
+OUT_GEN=$(OUT_DIR)/misc
+OUT_JOIN=$(OUT_DIR)/join
 
-# Define non-platform/compiler specific settings
-COMP_NAME=QueryConnectorService
-COMP_CLASS_OUT=$(OUT_CLASS)/$(COMP_NAME)
-COMP_GEN_OUT=$(OUT_MISC)/$(COMP_NAME)
-COMP_RDB_NAME=$(COMP_NAME).uno.rdb
-COMP_RDB=$(COMP_GEN_OUT)/$(COMP_RDB_NAME)
-COMP_PACKAGE=$(OUT_BIN)/$(COMP_NAME).$(UNOOXT_EXT)
-COMP_PACKAGE_URL=$(subst \\,\,"$(COMP_PACKAGE_DIR)$(PS)$(COMP_NAME).$(UNOOXT_EXT)")
-COMP_JAR_NAME=$(COMP_NAME).uno.jar
-COMP_JAR=$(COMP_CLASS_OUT)/$(COMP_JAR_NAME)
-COMP_JAR_MANIFEST=$(COMP_CLASS_OUT)/$(COMP_NAME).uno.Manifest
-COMP_UNOPKG_MANIFEST = $(COMP_GEN_OUT)/META-INF/manifest.xml
-COMP_REGISTERFLAG=$(COMP_GEN_OUT)$(PS)java_$(COMP_NAME)_register_component.flag
-COMP_COMPONENTS=$(COMP_NAME).components
+#sdk dir and files
+SDK_IDL_DIR=$(OO_SDK_HOME)$(PS)idl
 
-IDLFILES = QueryConnectorService.idl \
-	XQueryConnectorService.idl
+#project variables
+PRJ_NAME=queryconnector
 
-JAVAFILES  = \
-	queryconnector/QueryConnector.java
+#java package
+PACKAGE = com/meserico/queryconnector
+
+#component variables
+CMP_SERVICE_NAME=QueryConnectorService
+CMP_NAME=$(PRJ_NAME)
+CMP_RDB_NAME=$(CMP_NAME).uno.rdb
+CMP_COMPONENTS=$(CMP_NAME).components
+
+#output variables
+CMP_BIN_OUT=$(OUT_BIN)
+CMP_GEN_OUT=$(OUT_GEN)/$(CMP_NAME)
+CMP_CLASS_OUT=$(OUT_CLASS)/$(CMP_NAME)
+CMP_JOIN_OUT=$(OUT_JOIN)/$(CMP_NAME)
+
+#derived output variables
+CMP_UNOPKG_MANIFEST = $(CMP_GEN_OUT)/META-INF/manifest.xml
+CMP_RDB=$(CMP_GEN_OUT)/$(CMP_RDB_NAME)
+CMP_JAR_MANIFEST=$(CMP_GEN_OUT)/$(CMP_SERVICE_NAME).jar.manifest
+CMP_LIB_PATH=$(CMP_JOIN_OUT)/$(CMP_NAME)
+CMP_JAR=$(CMP_LIB_PATH)/$(CMP_NAME).jar
+
+#extension variables
+EXT_PKG = $(shell echo %cd%)/$(OUT_BIN)/$(PRJ_NAME).$(UNOOXT_EXT)
+
+#files to include
+IDLFILES = XQueryConnectorService.idl \
+	QueryConnectorService.idl
 	
-COMP_JAVAFILES = \
-	queryconnector/QueryConnectorService.java \
-	queryconnector/QueryConnector.java
-	
-PACKAGE = com/meserico
+CMP_JAVAFILES = \
+	src/QueryConnectorService.java \
+	src/QueryConnector.java
 
-CLASSFILES = $(patsubst %.java,$(SCRIPT_CLASS_OUT)/%.class,$(subst $(SAMPLE_NAME)/,,$(JAVAFILES)))
-CLASSFILES_FOR_COMP = $(patsubst %.java,../../../$(SCRIPT_CLASS_OUT)/%.class,$(subst $(SAMPLE_NAME)/,,$(JAVAFILES)))
-COMP_CLASSFILES = $(patsubst %.java,$(COMP_CLASS_OUT)/%.class,$(COMP_JAVAFILES))
+#java jars and classpath
+LIBS_JARS = $(wildcard libs/*.jar) 
+CLASSPATH_JARS = $(subst $(SPACE),$(PATH_SEPARATOR),$(LIBS_JARS))
+TOTAL_CLASSPATH = $(CLASSPATH)$(PATH_SEPARATOR)$(CLASSPATH_JARS)
 
-GEN_CLASSFILES = $(patsubst %.idl,$(COMP_CLASS_OUT)/$(PACKAGE)/%.class,$(IDLFILES))
-GEN_TYPELIST = $(subst /,.,$(patsubst %.idl,-T$(PACKAGE)/% ,$(IDLFILES)))
-GEN_URDFILES = $(patsubst %.idl,$(COMP_GEN_OUT)/%.urd,$(IDLFILES))
+#class files
+CMP_CLASSFILES = $(patsubst %.java,%.class,$(CMP_JAVAFILES))
 
-$(COMP_NAME)_CLASSFILES = $(COMP_NAME).class \
-		$(COMP_NAME)$(QUOTE)$$$(COMP_NAME)Impl.class
+#component files
+GMP_GEN_TYPELIST = $(subst /,.,$(patsubst %.idl,-T$(PACKAGE)/% ,$(IDLFILES)))
+CMP_GEN_URDFILES = $(patsubst %.idl,$(CMP_GEN_OUT)/%.urd,$(IDLFILES))
 
-$(COMP_NAME)_CLASSFILES += $(subst $(COMP_CLASS_OUT)/,,$(GEN_CLASSFILES))
-
-SDK_CLASSPATH = $(subst $(EMPTYSTRING) $(PATH_SEPARATOR),$(PATH_SEPARATOR),$(CLASSPATH)\
-		$(PATH_SEPARATOR)$(SAMPLE_CLASS_OUT)$(PATH_SEPARATOR)$(COMP_CLASS_OUT))
-
+#-----------------------------------------------------------
 # Targets
 .PHONY: ALL
-ALL : QueryConnectorMake 
-
-include $(SETTINGS)/stdtarget.mk
-
-#component
-
-$(COMP_CLASS_OUT)/%.Manifest :
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	@echo UNO-Type-Path: $(basename $*).uno.jar> $@
-	@echo RegistrationClassName: $(basename $(basename $(@F)))>> $@
-	@echo Class-Path: queryconnector/JSONLibrary.jar queryconnector/LODBConnector.jar>> $@
+ALL : 
+	@echo Creating output directories...
+	@if not exist $(subst /,$(PS),$(CMP_BIN_OUT)) mkdir $(subst /,$(PS),$(CMP_BIN_OUT))
+	@if not exist $(subst /,$(PS),$(CMP_CLASS_OUT)) mkdir $(subst /,$(PS),$(CMP_CLASS_OUT))
+	@if not exist $(subst /,$(PS),$(CMP_GEN_OUT)) mkdir $(subst /,$(PS),$(CMP_GEN_OUT))
+	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)) mkdir $(subst /,$(PS),$(CMP_JOIN_OUT))
+	@if not exist $(subst /,$(PS),$(CMP_LIB_PATH)) mkdir $(subst /,$(PS),$(CMP_LIB_PATH))
 	
-$(COMP_GEN_OUT)/%.urd : %.idl
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(IDLC) -C -I. -I$(IDL_DIR) -O$(COMP_GEN_OUT) $<
+	@echo Generate class file from idl...
+	@$(IDLC) -C -I. -I$(SDK_IDL_DIR) -O$(CMP_GEN_OUT) $(IDLFILES)
+	@$(REGMERGE) $(CMP_RDB) /UCR $(CMP_GEN_URDFILES)
+	@$(JAVAMAKER) -nD -O.$(PS)$(CMP_CLASS_OUT) $(CMP_RDB) -X$(URE_TYPES) -X$(OFFICE_TYPES)
 	
-$(COMP_GEN_OUT)/%.rdb : $(GEN_URDFILES)
-	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(REGMERGE) $@ /UCR $(GEN_URDFILES)
-
-$(GEN_CLASSFILES) : $(COMP_RDB)
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(JAVAMAKER) -nD $(GEN_TYPELIST) -O$(COMP_CLASS_OUT) $(COMP_RDB) -X$(URE_TYPES) -X$(OFFICE_TYPES)
-
-$(COMP_CLASSFILES) : $(COMP_JAVAFILES) $(GEN_CLASSFILES)
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH);QueryConnector\LODBConnector.jar;QueryConnector\JSONLibrary.jar" -d $(COMP_CLASS_OUT) $(COMP_JAVAFILES) 
-
-#script
-
-$(CLASSFILES) : $(JAVAFILES) 
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH);QueryConnector\LODBConnector.jar;QueryConnector\JSONLibrary.jar" -d $(SCRIPT_CLASS_OUT) $(JAVAFILES)
-
-# ----------------------------------------------------------------------
+	@echo Compile java classes...
+	@"$(JAVAC)" -source 6 -target 6 -cp "$(TOTAL_CLASSPATH)$(PATH_SEPARATOR)$(CMP_CLASS_OUT)" -d $(CMP_CLASS_OUT) $(CMP_JAVAFILES)
 	
-# rule for component jar file
-$(COMP_JAR) : $(COMP_JAR_MANIFEST) $(COMP_CLASSFILES) $(CLASSFILES)
-	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	-$(COPY) $(CLASSFILES_FOR_COMP) $(COMP_CLASS_OUT)
-	cd $(subst /,$(PS),$(COMP_CLASS_OUT)) && $(SDK_JAR) cvfm $(@F) $(<F) $($(basename $(basename $(@F)))_CLASSFILES) QueryConnector$$Query.class QueryConnector$$Settings.class QueryConnector.class
+	@echo Generate java manifest for component...
+	@echo UNO-Type-Path: $(CMP_NAME).jar> $(CMP_JAR_MANIFEST)
+	@echo RegistrationClassName: $(CMP_SERVICE_NAME)>> $(CMP_JAR_MANIFEST)
+	@echo Class-Path: JSONLibrary.jar LODBConnector.jar>> $(CMP_JAR_MANIFEST)
 	
-$(SCRIPT_JAR) : $(CLASSFILES)
-	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAR) cvf $@ $(CLASSNAMES) -C $(SCRIPT_CLASS_OUT) .
-
-# ----------------------------------------------------------------------
+	@echo Copy license...
+	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)license) mkdir $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)license)
+	@copy license$(PS)lgpl.txt $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)license)
 	
-# rule for component package file
-$(SCRIPT_PACKAGE) : $(SCRIPT_JAR) META-INF/manifest.xml $(SCRIPT_NAME)/parcel-descriptor.xml $(COMP_RDB) $(COMP_JAR)
-	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_ZIP) $@ META-INF/manifest.xml $(COMP_NAME).components $(SCRIPT_NAME)/parcel-descriptor.xml description.xml Addons.xcu $(SCRIPT_NAME)/LODBConnector.jar $(SCRIPT_NAME)/JSONLibrary.jar description/desc_it.txt description/desc_en.txt images/noimage_16.bmp license/lgpl.txt icons/queryconnector.png
-	cd $(OUT_CLASS) && $(SDK_ZIP) -u ../../$(OUT_BIN)/$(@F) $(SAMPLE_NAME)/$(SCRIPT_JAR_NAME) 
-	cd $(subst /,$(PS),$(COMP_GEN_OUT)) && $(SDK_ZIP) -u ../../bin/$(@F) $(COMP_RDB_NAME)
-	cd $(subst /,$(PS),$(COMP_CLASS_OUT)) && $(SDK_ZIP) -u ../../bin/$(@F) $(COMP_JAR_NAME)
-
-$(SCRIPT_REGISTERFLAG) : $(SCRIPT_PACKAGE)
-ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
-	-$(DEL) $(SCRIPT_REGISTERFLAG)
-	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(DEPLOYTOOL) $(SCRIPT_PACKAGE_URL)
-	@echo flagged > $(subst /,$(PS),$@)
-else
-	@echo --------------------------------------------------------------------------------
-	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
-	@echo --------------------------------------------------------------------------------
-endif
-
-
-QueryConnectorMake: $(SCRIPT_REGISTERFLAG)
-	@echo --------------------------------------------------------------------------------
-	@echo The "$(QM)$(SCRIPT_NAME)$(QM)" scripting package was installed in your office installation 
-	@echo if SDK_AUTO_DEPLOYMENT = YES. If you want to run the script, start the Office 
-	@echo and use the Tools/Macros/Run Macro menu item.
-	@echo --------------------------------------------------------------------------------
-
-%.run: $(CLASSFILES)
-	$(SDK_JAVA) -classpath "$(SDK_CLASSPATH)" $(subst /,.,$(PACKAGE)).$(basename $@)
-
-%.dbg: $(JAR1_JAR)
-	jdb -classpath "$(SDK_CLASSPATH)" $(subst /,.,$(PACKAGE)).$(basename $@)
-
-.PHONY: clean
-clean :
-	-$(DELRECURSIVE) $(subst /,$(PS),$(SAMPLE_CLASS_OUT))
-	-$(DELRECURSIVE) $(subst /,$(PS),$(SCRIPT_GEN_OUT))
-	-$(DELRECURSIVE) $(subst /,$(PS),$(COMP_GEN_OUT))
-	-$(DELRECURSIVE) $(subst /,$(PS),$(COMP_CLASS_OUT))
-	-$(DEL) $(subst \\,\,$(subst /,$(PS),$(SCRIPT_PACKAGE_URL)))
-
+	@echo Copy descriptions...
+	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)description) mkdir $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)description)
+	@copy description$(PS)desc_en.txt $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)description)
+	@copy description$(PS)desc_it.txt $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)description)
+	
+	@echo Creating jar in $(CMP_JOIN_OUT) directory...
+	@$(SDK_JAR) cfm $(CMP_JAR) $(CMP_JAR_MANIFEST) -C $(CMP_CLASS_OUT) .
+	
+	@echo Copying icons and images...
+	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)images) @mkdir $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)images)
+	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)icons) @mkdir $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)icons)
+	@xcopy /E /H /Y icons $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)icons)
+	@xcopy /E /H /Y images $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)images)
+	
+	@echo Copy libs...
+	@xcopy /E /H /Y libs $(subst /,$(PS),$(CMP_LIB_PATH))
+	
+	@echo Copyng other files...
+	@copy Addons.xcu $(subst /,$(PS),$(CMP_JOIN_OUT))
+	@copy description.xml $(subst /,$(PS),$(CMP_JOIN_OUT))
+	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)META-INF) mkdir $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)META-INF)
+	@copy manifest.xml $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)META-INF)
+	@copy $(subst /,$(PS),$(CMP_RDB)) $(subst /,$(PS),$(CMP_JOIN_OUT))
+	@copy queryconnector.components $(subst /,$(PS),$(CMP_JOIN_OUT))
+	@copy parcel-descriptor.xml $(subst /,$(PS),$(CMP_LIB_PATH))
+	
+	@echo Creating $(UNOOXT_EXT) package...
+	@if exist $(subst /,$(PS),$(EXT_PKG)) del /F $(subst /,$(PS),$(EXT_PKG))
+	@cd $(CMP_JOIN_OUT) && $(SDK_ZIP) -9 -r -o -q $(EXT_PKG) .
+	
+	@echo complete.
