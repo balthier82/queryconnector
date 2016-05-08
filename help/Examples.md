@@ -95,7 +95,7 @@ set OFFICE_PATH=<path to libreoffice/openoffice installation>
 set UNO_CLASSES_PATH=%OFFICE_PATH%\program\classes
 set CLASS_PATH=%UNO_CLASSES_PATH%\java_uno.jar;%UNO_CLASSES_PATH%\unoloader.jar;%UNO_CLASSES_PATH%\unoil.jar;%UNO_CLASSES_PATH%\juh.jar;<path to the queryconnector.jar>
 
-%JAVAC% -cp %CLASS_PATH% -source 1.6 UpdateAll.java
+%JAVAC% -cp %CLASS_PATH% -source 6 UpdateAll.java
 %JAVA% -cp %CLASS_PATH%;.\ UpdateAll
 ```
 you can find the **QueryConnectorService.uno.jar** inside the **queryconnetor*.oxt** (use a zip program to show the content of the .oxt package).
