@@ -98,4 +98,4 @@ set CLASS_PATH=%UNO_CLASSES_PATH%\java_uno.jar;%UNO_CLASSES_PATH%\unoloader.jar;
 %JAVAC% -cp %CLASS_PATH% -source 6 UpdateAll.java
 %JAVA% -cp %CLASS_PATH%;.\ UpdateAll
 ```
-you can also find the **queryconnector.jar** inside the **queryconnetor*.oxt** (use a zip program to show the content of the .oxt package).
+you can also find **queryconnector.jar** inside the **queryconnetor*.oxt** package (use a zip program to show the content of the .oxt package).
