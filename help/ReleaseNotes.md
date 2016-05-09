@@ -1,5 +1,9 @@
 #Release notes
 
+**Version 1.4.1**
+* Added icons
+* Added the possibility to modify a previously attached query
+
 **Version 1.4**
 * Major extension revision.
 
