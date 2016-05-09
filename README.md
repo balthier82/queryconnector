@@ -1,4 +1,4 @@
-<sub>**Last update**: 08 May 2016<sub>
+<sub>**Last update**: 09 May 2016<sub>
 
 ![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
 
@@ -12,7 +12,7 @@ This extension allows you to attach a query to a spreadsheet LibreOffice/OpenOff
 
 ###Dowload:
 
-Current Version (1.4 - **Beta**): [Download](https://github.com/balthier82/queryconnector/raw/master/versions/queryconnector_1.4.oxt)
+Current Version (1.4.1 - **Beta**): [Download](https://github.com/balthier82/queryconnector/raw/master/versions/queryconnector_1.4.1.oxt)
 
 (Compatible with OpenOffice 4.0 / LibreOffice 4.0 or higher - **Java is required**)
 
