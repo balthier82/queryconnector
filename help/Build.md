@@ -27,7 +27,7 @@ You can find more information in the following links:
 
 * Open the prompt command windows/bash shell to the **QueryConnector** directory
 * Execute the **setsdkenv_windows.bat** or **setsdkenv_unix.sh** that is located inside the sdk directory
-* run **make** (ATTENTION: the Makefile was created for windows only. You have to change it before compile)
+* run **make** (ATTENTION: the Makefile was created for windows only.)
 * The output file is located in **out/bin/**
 
 #####for Windows users:
