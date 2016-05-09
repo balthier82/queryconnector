@@ -19,7 +19,6 @@
 
  
 import com.sun.star.script.provider.XScriptContext;
-
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.frame.XComponentLoader;
 import com.sun.star.lang.XComponent;
@@ -98,6 +97,7 @@ import com.sun.star.drawing.XDrawPageSupplier;
 import com.sun.star.drawing.XDrawPage;
 import com.sun.star.comp.helper.Bootstrap;
 import javax.swing.JOptionPane;
+import com.meserico.queryconnector.IQuery;
 
 public class QueryConnector implements WizardListener
 {
@@ -169,6 +169,19 @@ public class QueryConnector implements WizardListener
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			connector = new QueryConnector(model, componentContext);
 			connector.attach();
+		}catch(Exception ex){
+			if(connector != null)
+				connector.enableEdit();
+			ExceptionDialog.show(null, ex);
+		}
+	}
+	
+	public static void modify(XComponentContext componentContext, XModel model) {
+		QueryConnector connector = null; 
+		try{
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			connector = new QueryConnector(model, componentContext);
+			connector.modify();
 		}catch(Exception ex){
 			if(connector != null)
 				connector.enableEdit();
@@ -331,6 +344,31 @@ public class QueryConnector implements WizardListener
 				DBConnectorWizard wizard = new DBConnectorWizard(this);
 				wizard.setVisible(true);
 			}else enableEdit();
+		}else
+			error(tr("SELECT_SINGLE_CELL_ERROR"));
+	}
+	
+	private void modify() throws Exception {
+		if(this.selectedCell != null){
+			this.selectedCellAddress = UnoRuntime.<XCellAddressable>queryInterface(XCellAddressable.class, this.selectedCell).getCellAddress();	
+			String queryName = getCellUserProperty(this.selectedCell, QUERY_PROPERTY);
+			if(queryName != null){
+				if(!this.settings.hasQuery(queryName))
+					error(tr("QUERY_NOY_PRESENT_ERROR"));
+				else{
+					Query query = settings.getQuery(queryName);
+					XSpreadsheet sheet = getSpreadsheetById(query.getSheetID());
+					if(sheet == null)
+						error(tr("SPREADSHEET_NOT_EXISTS"));
+					else{
+						this.selectedCellAddress = UnoRuntime.<XCellAddressable>queryInterface(XCellAddressable.class, this.selectedCell).getCellAddress();	
+						DBConnectorWizard wizard = new DBConnectorWizard(this);
+						wizard.modifyQuery(query);
+						wizard.setVisible(true);
+					}
+				}
+			}else
+				error(tr("CELL_DOESNT_HAVE_QUERY_ERROR"));
 		}else
 			error(tr("SELECT_SINGLE_CELL_ERROR"));
 	}
@@ -686,7 +724,7 @@ public class QueryConnector implements WizardListener
 		}
 	}
 	
-	private class Query extends JSONObject {
+	private class Query extends JSONObject implements IQuery {
 	
 		protected static final String QUERY_NODE_PREFIX = "Query-";
 		protected static final String QUERY_PROPERTY = "query";

@@ -125,10 +125,8 @@ ALL :
 	@$(SDK_JAR) cfm $(CMP_JAR) $(CMP_JAR_MANIFEST) -C $(CMP_CLASS_OUT) .
 	
 	@echo Copying icons and images...
-	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)images) @mkdir $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)images)
 	@if not exist $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)icons) @mkdir $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)icons)
 	@xcopy /E /H /Y icons $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)icons)
-	@xcopy /E /H /Y images $(subst /,$(PS),$(CMP_JOIN_OUT)$(PS)images)
 	
 	@echo Copy libs...
 	@xcopy /E /H /Y libs $(subst /,$(PS),$(CMP_LIB_PATH))

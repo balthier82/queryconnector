@@ -42,6 +42,7 @@ public class QueryConnectorService {
 		static final String ATTACH_EVENT = "attach";
 		static final String INFO_EVENT = "info";
 		static final String UPDATE_EVENT = "update";
+		static final String MODIFY_EVENT = "modify";
 		
 		private XComponentContext compContext;
 		private com.sun.star.frame.XFrame m_xFrame;
@@ -69,6 +70,11 @@ public class QueryConnectorService {
 		private void attach(Object object) {
 			XModel model = UnoRuntime.queryInterface(XModel.class, object);
 			QueryConnector.attach(compContext, model);
+		}
+		
+		private void modify(Object object) {
+			XModel model = UnoRuntime.queryInterface(XModel.class, object);
+			QueryConnector.modify(compContext, model);
 		}
 		
 		private void update(Object object) {
@@ -123,6 +129,8 @@ public class QueryConnectorService {
 					updateAll(this.getXComponent());
 				} else if(UPDATE_EVENT.equals(sEvent)) {
 					update(this.getXComponent());
+				} else if(MODIFY_EVENT.equals(sEvent)){
+					modify(this.getXComponent());
 				}
 			}
 			catch(Throwable e) {

@@ -63,6 +63,13 @@ public class DBConnection {
         this.driverClass = driverClass;
     }
     
+    public DBConnection(IQuery query){
+        this.jdbcUrl = query.getURL();
+        this.username = query.getUsername();
+        this.password = query.getPassword();
+        this.driverClass = query.getDriverClass();
+    }
+    
     public Connection getConnection(){
         try{
             Class.forName(this.driverClass);

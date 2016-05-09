@@ -775,8 +775,7 @@ public class DBConnectorWizard extends JExtDialog {
     }//GEN-LAST:event_testDriverClassActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        JOptionPane.showMessageDialog(this, tr("AVOID_X_BUTTON_MESSAGE"), 
-                tr("INFO_DIALOG_TITLE"), JOptionPane.INFORMATION_MESSAGE);
+        this.abortWizard();
     }//GEN-LAST:event_formWindowClosing
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -1034,6 +1033,18 @@ public class DBConnectorWizard extends JExtDialog {
         this.stopWaiting();
         this.errorTextStep1.setText(tr("QUERY_FAILED"));
         ExceptionDialog.show(this, ex);
+    }
+    
+    public void modifyQuery(IQuery query){
+        try{
+            Class.forName(query.getDriverClass());
+            querySQL.setText(query.getQuery());
+            this.connection = new DBConnection(query);
+            backToStep1Btn.setEnabled(false);
+            this.changePage(2);
+        }catch(Exception ex){
+            ExceptionDialog.show(this, ex);
+        }
     }
     
     public class DriverItem{
