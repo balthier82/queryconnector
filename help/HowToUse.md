@@ -8,7 +8,7 @@ A brief explanation on how to use the extension
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step1.png)
 
- 2) Click on *Data > Query > Attach data...*
+ 2) Click on *Data > Connect query... > Attach data...*
 
 ![](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/howtouse_step2.png)
 
