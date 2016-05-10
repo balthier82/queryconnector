@@ -1,5 +1,8 @@
 #Release notes
 
+**Version 1.4.2**
+* Modify query fix
+
 **Version 1.4.1**
 * Added icons
 * Added the possibility to modify a previously attached query
