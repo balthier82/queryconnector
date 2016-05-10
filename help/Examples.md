@@ -82,7 +82,7 @@ public class UpdateAll {
 	} 
 }
 ```
-(download the **jars/queryconnector.jar** to allow the compilation performs correctly).
+(download the [**jars/queryconnector.jar**]https://github.com/balthier82/queryconnector/raw/master/jars/queryconnector.jar to allow the compilation performs correctly).
 Here's an example on how compile and run the java example (for windows):
 
 ```bat
