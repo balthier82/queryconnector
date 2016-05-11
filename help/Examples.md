@@ -98,7 +98,7 @@ public class UpdateAll {
 }
 ```
 (download the [**jars/queryconnector.jar**](https://github.com/balthier82/queryconnector/raw/master/jars/queryconnector.jar) to allow the compilation performs correctly).
-Here's an example on how compile and run the java example (for windows):
+Here's an example on how compile and run the java example on windows:
 
 ```bat
 rem java must be 32 bit version
@@ -116,5 +116,25 @@ C:\path\to\queryconnector.jar
 
 %JAVAC% -cp %CLASS_PATH% -source 6 UpdateAll.java
 %JAVA% -cp %CLASS_PATH%;.\ UpdateAll
+```
+and on linux:
+```bash
+#!/bin/bash
+
+#java must be 32 bit version
+export JAVA_PATH32="/path/to/sdk/bin"
+export JAVA=$JAVA_PATH32/java
+export JAVAC=$JAVA_PATH32/javac
+
+export OFFICE_PATH="/path/to/[libre|open]office/installation"
+export UNO_CLASSES_PATH=$OFFICE_PATH/program/classes
+export CLASS_PATH=$UNO_CLASSES_PATH/java_uno.jar; \
+	$UNO_CLASSES_PATH/unoloader.jar; \
+	$UNO_CLASSES_PATH/unoil.jar; \
+	$UNO_CLASSES_PATH/juh.jar; \
+	/path/to/queryconnector.jar
+
+$JAVAC -cp $CLASS_PATH -source 1.6 TestUpdateAll.java
+$JAVA -cp $CLASS_PATH:./ TestUpdateAll
 ```
 you can also find **queryconnector.jar** inside the **queryconnetor*.oxt** package (use a zip program to show its content).
