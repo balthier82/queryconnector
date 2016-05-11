@@ -18,7 +18,7 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 -->
 <description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <version value="1.4.1" />
+    <version value="1.4.2" />
     <identifier value="com.meserico.queryconnector-ext"/>
 	<display-name>
 		<name lang="en">Query Connector</name>
