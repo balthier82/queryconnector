@@ -106,7 +106,7 @@ set JAVA_PATH32="c:\path\to\sdk\bin"
 set JAVA=%JAVA_PATH32%\java
 set JAVAC=%JAVA_PATH32%\javac
 
-set OFFICE_PATH=<path to libreoffice/openoffice installation>
+set OFFICE_PATH="C:\path\to\[libre|open]office\installation"
 set UNO_CLASSES_PATH=%OFFICE_PATH%\program\classes
 set CLASS_PATH=%UNO_CLASSES_PATH%\java_uno.jar;^
 %UNO_CLASSES_PATH%\unoloader.jar;^
