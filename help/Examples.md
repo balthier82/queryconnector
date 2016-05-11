@@ -56,10 +56,13 @@ public class UpdateAll {
 			xQueryConnector.silentUpdateAll(xDocument);
 			
 			XStorable storable = cast(XStorable.class, xDocument);
-			storable.storeToURL(toUrl("test.xls"), toProperties(
-				"Overwrite", true,
-				"FilterName", "MS Excel 97"
-			));
+			storable.storeToURL(
+				toUrl("test.xls"), 
+				toProperties(
+					"Overwrite", true,
+					"FilterName", "MS Excel 97"
+				)
+			);
 			
 			XCloseable xCloseable = cast(XCloseable.class, xDocument);
 			if ( xCloseable != null )
