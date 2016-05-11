@@ -35,8 +35,7 @@ public class UpdateAll {
 			XMultiComponentFactory xServiceManager = xContext.getServiceManager();
 
 			Object desktop = xServiceManager.createInstanceWithContext("com.sun.star.frame.Desktop", xContext);
-		        XComponentLoader xComponentLoader = cast(XComponentLoader.class, desktop );
-			
+			XComponentLoader xComponentLoader = cast(XComponentLoader.class, desktop );
 			
 			XComponent xDocument = xComponentLoader.loadComponentFromURL(
 				toUrl("test.ods"), 
