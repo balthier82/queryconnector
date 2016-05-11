@@ -137,4 +137,4 @@ export CLASS_PATH=$UNO_CLASSES_PATH/java_uno.jar; \
 $JAVAC -cp $CLASS_PATH -source 1.6 TestUpdateAll.java
 $JAVA -cp $CLASS_PATH:./ TestUpdateAll
 ```
-you can also find **queryconnector.jar** inside the **queryconnetor*.oxt** package (use a zip program to show its content).
+You can also find **queryconnector.jar** inside the **queryconnetor*.oxt** package (use a zip program to show its content).
