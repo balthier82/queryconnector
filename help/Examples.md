@@ -38,15 +38,21 @@ public class UpdateAll {
 		        XComponentLoader xComponentLoader = cast(XComponentLoader.class, desktop );
 			
 			
-			XComponent xDocument = xComponentLoader.loadComponentFromURL(toUrl("test.ods"), 
-				"_blank", 0, toProperties(
+			XComponent xDocument = xComponentLoader.loadComponentFromURL(
+				toUrl("test.ods"), 
+				"_blank", 
+				0, 
+				toProperties(
 					"Hidden", true,
 					"UpdateDocMode", "1"
 				)
 			);
 			
 			Object queryConnector = xServiceManager.createInstanceWithContext(
-				"com.meserico.QueryConnectorService", xContext );
+				"com.meserico.QueryConnectorService", 
+				xContext 
+			);
+			
 			XQueryConnectorService xQueryConnector = cast(XQueryConnectorService.class, queryConnector);
 			xQueryConnector.silentUpdateAll(xDocument);
 			
