@@ -30,20 +30,22 @@ import com.sun.star.util.XCloseable;
 public class UpdateAll {
 	public static void main(String[] argv){
 		try {
-            XComponentContext xContext = Bootstrap.bootstrap();
+            		XComponentContext xContext = Bootstrap.bootstrap();
 
-            XMultiComponentFactory xServiceManager = xContext.getServiceManager();
+            		XMultiComponentFactory xServiceManager = xContext.getServiceManager();
 
 			Object desktop = xServiceManager.createInstanceWithContext("com.sun.star.frame.Desktop", xContext);
-            XComponentLoader xComponentLoader = cast(XComponentLoader.class, desktop );
+		        XComponentLoader xComponentLoader = cast(XComponentLoader.class, desktop );
 			
 			
-            XComponent xDocument = xComponentLoader.loadComponentFromURL(toUrl("test.ods"), "_blank", 0, toProperties(
+            		XComponent xDocument = xComponentLoader.loadComponentFromURL(toUrl("test.ods"), 
+            				"_blank", 0, toProperties(
 				"Hidden", true,
 				"UpdateDocMode", "1"
 			));
 			
-			Object queryConnector = xServiceManager.createInstanceWithContext("com.meserico.QueryConnectorService", xContext );
+			Object queryConnector = xServiceManager.createInstanceWithContext(
+				"com.meserico.QueryConnectorService", xContext );
 			XQueryConnectorService xQueryConnector = cast(XQueryConnectorService.class, queryConnector);
 			xQueryConnector.silentUpdateAll(xDocument);
 			
