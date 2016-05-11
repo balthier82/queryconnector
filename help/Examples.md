@@ -102,7 +102,7 @@ Here's an example on how compile and run the java example (for windows):
 
 ```bat
 rem java must be 32 bit version
-set JAVA_PATH32="<java sdk dir>\bin"
+set JAVA_PATH32="c:\path\to\sdk\bin"
 set JAVA=%JAVA_PATH32%\java
 set JAVAC=%JAVA_PATH32%\javac
 
