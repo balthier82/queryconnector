@@ -19,12 +19,13 @@ import com.sun.star.uno.UnoRuntime;
 import com.sun.star.frame.XComponentLoader;
 import com.sun.star.beans.PropertyValue;
 import com.sun.star.lang.XComponent;
-import com.meserico.XQueryConnectorService;
 import com.sun.star.frame.XStorable;
 import com.sun.star.container.XNameAccess;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import com.meserico.queryconnector.XQueryConnectorService;
+import com.sun.star.util.XCloseable;
 
 public class UpdateAll {
 	public static void main(String[] argv){
@@ -51,6 +52,12 @@ public class UpdateAll {
 				"Overwrite", true,
 				"FilterName", "MS Excel 97"
 			));
+			
+			XCloseable xCloseable = cast(XCloseable.class, xDocument);
+			if ( xCloseable != null )
+				xCloseable.close(false);
+			else 
+				xDocument.dispose();
         }
         catch (java.lang.Exception e){
             e.printStackTrace();
