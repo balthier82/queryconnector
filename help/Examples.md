@@ -101,7 +101,7 @@ public class UpdateAll {
 }
 ```
 (download the [**jars/queryconnector.jar**](https://github.com/balthier82/queryconnector/raw/master/jars/queryconnector.jar) to allow the compilation performs correctly).
-Here's an example on how compile and run the java example on windows:
+Here's an example on how compile and run the java example on windows with a batch script:
 
 ```bat
 rem java must be 32 bit version
@@ -120,7 +120,7 @@ C:\path\to\queryconnector.jar
 %JAVAC% -cp %CLASS_PATH% -source 6 UpdateAll.java
 %JAVA% -cp %CLASS_PATH%;.\ UpdateAll
 ```
-and on bash:
+and on a unix-like OS with a script for the bash shell:
 ```bash
 #!/bin/bash
 
