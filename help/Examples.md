@@ -1,6 +1,6 @@
 ###Scripting Example
 
-This script can be used inside a Basic macro:
+This script can be used inside a Basic macro to update all the query of the actually opened document:
 
 ```vbnet
 qc = CreateUnoService("com.meserico.QueryConnectorService")
