@@ -14,7 +14,7 @@ This extension allows you to attach one or more queries to a Libre/OpenOffice Ca
 
 Current Version (1.4.2 - **Beta**): [Download](https://github.com/balthier82/queryconnector/raw/master/versions/queryconnector_1.4.2.oxt)
 
-(Compatible with OpenOffice >= 4.0 / LibreOffice >= 4.0 - **Java is required**)
+(Tested with OpenOffice >= 4.0 / LibreOffice >= 4.0 - **Java is required**)
 
 ###Documentation:
 
