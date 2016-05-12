@@ -1,6 +1,6 @@
 #Introduction
 
-How to Install the extension on LibreOffice or OpenOffice installation.
+How to Install the extension on LibreOffice or OpenOffice.
 
 #Details
 
@@ -26,7 +26,7 @@ How to Install the extension on LibreOffice or OpenOffice installation.
 
    assuming that the two files are located in /usr/lib. Without this setting OpenOffice/LibreOffice will crash.
 
- * Another problem I found is that the library libJdbcOdbc.so not find libjvm.so library. To solve it we have to change the LD_LIBRARY_PATH environment variable in this way:
+ * Another problem I found is that the library libJdbcOdbc.so not find libjvm.so library. To solve this you have to change the LD_LIBRARY_PATH environment variable in this way:
 
    ```bash
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/java/default/lib/i386/client
