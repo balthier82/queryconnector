@@ -120,7 +120,7 @@ C:\path\to\queryconnector.jar
 %JAVAC% -cp %CLASS_PATH% -source 6 UpdateAll.java
 %JAVA% -cp %CLASS_PATH%;.\ UpdateAll
 ```
-and on linux:
+and on bash:
 ```bash
 #!/bin/bash
 
