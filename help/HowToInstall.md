@@ -13,7 +13,7 @@ How to Install the extension on LibreOffice or OpenOffice.
  * Restart OpenOffice/LibreOffice
  * Enjoy! :D
 
-*Only on Ubuntu (and maybe in other Linux distro) with LibreOffice installed via apt-get:*
+*Only on Ubuntu (and maybe in other Linux distros) with LibreOffice installed via apt-get:*
 
 * Make sure that the package **libreoffice-java-common** is installed, otherwise the extension will not be registered properly. 
 
