@@ -1,4 +1,4 @@
-<sub>**Last update**: 10 May 2016<sub>
+<sub>**Last update**: 9 August 2017<sub>
 
 ![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
 
@@ -30,5 +30,5 @@ Current Version (1.4.2 - **Beta**): [Download](https://github.com/balthier82/que
 ###Other:
 
  * [Apache OpenOffice Extension] (http://extensions.openoffice.org/en/project/queryconnector)
- * [LibreOffice Extension] (http://extensions.libreoffice.org/extension-center/queryconnector)
+ * [LibreOffice Extension] (http://extensions.libreoffice.org/extensions/queryconnector)
 
