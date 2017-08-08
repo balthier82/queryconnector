@@ -1,8 +1,8 @@
-#Introduction
+# Introduction
 
 A brief explanation on how to use the extension
 
-#Details
+# Details
 
  1) Select the starting cell of the spreadsheet where the result of the query will be inserted.
 
