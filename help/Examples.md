@@ -1,4 +1,4 @@
-###Scripting Example
+### Scripting Example
 
 This script can be used inside a Basic macro to update all the query of the actually opened Calc document:
 
@@ -7,7 +7,7 @@ qc = CreateUnoService("com.meserico.QueryConnectorService")
 qc.updateAll(ThisComponent)
 ```
 
-###External Language Example (Java)
+### External Language Example (Java)
 
 This example open a calc document (**test.ods**), update all the attached queries and save it as an Excel file (**test.xls**).
 
