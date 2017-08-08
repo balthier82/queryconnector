@@ -1,4 +1,4 @@
-#Extension license - LGPL
+# Extension license - LGPL
 <pre>
                   GNU LESSER GENERAL PUBLIC LICENSE
                        Version 2.1, February 1999
