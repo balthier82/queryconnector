@@ -1,4 +1,4 @@
-#Release notes
+# Release notes
 
 **Version 1.4.2**
 * Modify query fix
