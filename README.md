@@ -1,5 +1,3 @@
-<sub>**Last update**: 9 August 2017<sub>
-
 ![Query Connector](https://raw.githubusercontent.com/balthier82/queryconnector/master/help/images/QueryConnector.png)
 
 [View the Web Site](http://balthier82.github.io/queryconnector/)
