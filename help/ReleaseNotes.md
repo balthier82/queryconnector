@@ -5,44 +5,45 @@
 
 **Version 1.4.1**
 * Added icons
-* Added the possibility to modify a previously attached query
+* Added functionality to edit a previously linked query
 
 **Version 1.4**
 * Major extension revision.
 
 **Version 1.3.1**
-* Resolved the **IllegalArgumentException** exception that occurrs using the extension menù action.
+* Resolved the IllegalArgumentException error that occurs when using the extension menu action.
 
 **Version 1.3.0**
-* Added a **UNO Component Service** to allow scripting with Basic/Javascript/etc within OpenOffice/LibreOffice or with external language like C++ or Java.
+* Introduced a **UNO Component Service** to enable scripting using Basic, JavaScript, and other languages within LibreOffice, as well as external languages like C++ or Java..
 * See [Examples](https://github.com/balthier82/queryconnector/blob/master/help/Examples.md).
 
 **Version 1.2.1**
-* Solved same problem with the "Update All" command
+* Enhanced support for executing multiple queries across different sheets using the 'Update All' menu item.
 
 **Version 1.2.0**
- * Add support for multi query on different sheets with the "Update All" menu item
- * Solved a problem with the null value
+ * Introduced functionality to support multiple queries across different sheets via the 'Update All' menu item
+ * Fixed an issue related to handling null values
 
 **Version 1.1.1**
- * Add "Update All" menu item
+ * New "Update All" menu item
 
 **Version 1.1.0**
- * The layout of the windows and Swing components has been renovated to solve some problems found in different Look And Feel of Java used by operating systems.
- * The main window now is not set as Always on Top.
- * Fixed a bug with the ODBC Source Selection dialog in which the folder selection dialog (used to select the folder containing the DSN files) was always below that window.
- * Added support for unixODBC on Unix systems (works only on the JRE provided by Oracle) *NOTE: Please read the Wiki page "How to Install"*
+ - The window layouts and Swing components have been redesigned to address issues encountered with various Java Look-and-Feel implementations across operating systems.  
+ - The main window is no longer configured as "Always on Top".
+ - Resolved a bug in the ODBC Source Selection dialog where the folder selection dialog (used for choosing DSN file directories) was consistently displayed beneath the main dialog window.  
+ - Added compatibility for `unixODBC` on Unix systems (limited to the JRE provided by Oracle).  
+  *Note: Please refer to the Wiki page titled "How to Install" for detailed instructions.*
 
 **Version 1.0.3**
- * Java classes have been recompiled with code level 1.6 instead of 1.7
+ * Java classes have been recompiled using code level 1.6, replacing the previous level 1.7.
 
 **Version 1.0.2**
- * Fixed some problems due to the fact that unix uses a case-sensitive file system.
+ * Resolved issues arising from Unix's case-sensitive file system.
 
 **Version 1.0.1**
- * Fixed several shortcomings in the translation 
- * The extension always stored the connection information. Not any more, is optional. 
- * The extension's options are now saved on metadata rather than to the user-defined attributes.
+ - Corrected various translation issues to enhance clarity and accuracy.  
+ - The extension previously always stored connection information; this behavior is now optional.  
+ - Options for the extension are now stored in metadata instead of user-defined attributes.
 
 **Version 1.0**
  * First release
