@@ -1,6 +1,6 @@
 ### Scripting Example
 
-This script can be used inside a Basic macro to update all the query of the actually opened Calc document:
+This script can be incorporated into a **Basic** macro to update all queries in the currently open Calc document:
 
 ```vbnet
 qc = CreateUnoService("com.meserico.QueryConnectorService")
@@ -9,7 +9,7 @@ qc.updateAll(ThisComponent)
 
 ### External Language Example (Java)
 
-This example open a calc document (**test.ods**), update all the attached queries and save it as an Excel file (**test.xls**).
+This example opens a Calc document (**test.ods**), updates all attached queries, and saves it as an Excel file (**test.xls**).
 
 ```java
 import com.sun.star.comp.helper.Bootstrap;
@@ -100,8 +100,8 @@ public class UpdateAll {
 	} 
 }
 ```
-(download the [**jars/queryconnector.jar**](https://github.com/balthier82/queryconnector/raw/master/jars/queryconnector.jar) to allow the compilation performs correctly).
-Here's an example on how compile and run the java example on windows with a batch script:
+(download the [**jars/queryconnector.jar**](https://github.com/balthier82/queryconnector/raw/master/jars/queryconnector.jar) to ensure the compilation is executed correctly).
+Here is an example of how to compile and run the Java example on Windows using a batch script:
 
 ```bat
 rem java must be 32 bit version
@@ -120,7 +120,7 @@ C:\path\to\queryconnector.jar
 %JAVAC% -cp %CLASS_PATH% -source 6 UpdateAll.java
 %JAVA% -cp %CLASS_PATH%;.\ UpdateAll
 ```
-and on a unix-like OS with a script for the bash shell:
+and on a unix-like OS with a bash shell script:
 ```bash
 #!/bin/bash
 
@@ -140,4 +140,5 @@ export CLASS_PATH=$UNO_CLASSES_PATH/java_uno.jar; \
 $JAVAC -cp $CLASS_PATH -source 1.6 UpdateAll.java
 $JAVA -cp $CLASS_PATH:./ UpdateAll
 ```
-You can also find **queryconnector.jar** inside the **queryconnetor*.oxt** package (use a zip program to show its content).
+You can also locate **queryconnector.jar** within the **queryconnector.oxt** package (use a zip utility to view its contents).
+
