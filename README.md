@@ -16,10 +16,10 @@ Current Version (1.4.2 - **Beta**): [Download](https://github.com/balthier82/que
 
 ### Documentation:
 
-* [How To Install](https://github.com/balthier82/queryconnector/blob/master/help/HowToInstall.md)
+* [Installation](https://github.com/balthier82/queryconnector/blob/master/help/HowToInstall.md)
 * [How To Use](https://github.com/balthier82/queryconnector/blob/master/help/HowToUse.md)
 * [Release notes](https://github.com/balthier82/queryconnector/blob/master/help/ReleaseNotes.md)
-* [Build](https://github.com/balthier82/queryconnector/blob/master/help/Build.md)
+* [Build instructions](https://github.com/balthier82/queryconnector/blob/master/help/Build.md)
 * [License](https://github.com/balthier82/queryconnector/blob/master/help/License.md) (LGPL)
 
 ### For Developers:
