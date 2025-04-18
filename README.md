@@ -4,7 +4,7 @@
 
 # Query Connector
 
-This extension enables you to link one or more queries to a LibreOffice or OpenOffice Calc spreadsheet, storing the connection details directly in the spreadsheet for future data updates. It operates independently of LibreOffice/OpenOffice Base, so there is no need to register an *.odb file to connect the query or queries
+This extension enables you to link one or more queries to a LibreOffice Calc spreadsheet, storing the connection details directly in the spreadsheet for future data updates. It operates independently of LibreOffice Base, so there is no need to register an *.odb file to connect the query or queries
 
 **Supported languages: english, italian.**
 
@@ -27,7 +27,6 @@ Current Version (1.4.2 - **Beta**): [Download](https://github.com/balthier82/que
 
 ### Links:
 
- * [Apache OpenOffice Extension](http://extensions.openoffice.org/en/project/queryconnector)
  * [LibreOffice Extension](http://extensions.libreoffice.org/extensions/queryconnector)
 
 
