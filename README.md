@@ -8,9 +8,7 @@ This extension enables you to link one or more queries to a LibreOffice Calc spr
 
 **Supported languages: english, italian.**
 
-### Dowload:
-
-Current Version (1.4.2 - **Beta**): [Download](https://github.com/balthier82/queryconnector/releases/download/1.4.2/queryconnector_1.4.2.oxt)
+[Dowload](https://github.com/balthier82/queryconnector/releases)
 
 (**Java is required**)
 
