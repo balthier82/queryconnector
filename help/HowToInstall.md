@@ -1,35 +1,36 @@
 # Introduction
 
-How to Install the extension on LibreOffice or OpenOffice.
+Steps to install the extension on LibreOffice.
 
 # Details
 
 *On Any Platform:*
 
- * Go to **Tools -> Extension Manager** 
- * Click on **Add...**
- * Select **queryconnector*.oxt**
- * Accept the prompted license 
- * Restart OpenOffice/LibreOffice
- * Enjoy! :D
+- Go to **Tools -> Extension Manager**  
+- Click **Add...**  
+- Select **queryconnector*.oxt**  
+- Accept the license agreement when prompted  
+- Restart LibreOffice  
+- Enjoy! 😄
 
-*Only on Ubuntu (and maybe in other Linux distros) with LibreOffice installed via apt-get:*
+*Only on Ubuntu (and possibly other Linux distributions) with LibreOffice installed via apt-get:*
 
-* Make sure that the package **libreoffice-java-common** is installed, otherwise the extension will not be registered properly. 
+- Ensure the **libreoffice-java-common** package is installed; otherwise, the extension will not register correctly.
 
-### Instructions for use unixODBC:
+### Instructions for unixODBC:
 
- * There is a bug due to the fact that the libraries "libodbc.so" and "libodbcinst.so" are not loaded from the libJdbcOdbc.so library (that implements the JDBC-ODBC bridge). After some research I found that you have to set the LD_PRELOAD environment variable this way:
+* There is a bug because the libraries "libodbc.so" and "libodbcinst.so" are not loaded by the "libJdbcOdbc.so" library (which implements the JDBC-ODBC bridge). After some research, I found that you need to set the `LD_PRELOAD` environment variable as follows:
+
    ```bash
    export LD_PRELOAD=$LD_PRELOAD:/usr/lib/libodbc.so:/usr/lib/libodbcinst.so
    ```
 
-   assuming that the two files are located in /usr/lib. Without this setting OpenOffice/LibreOffice will crash.
+   assuming that both files are located in /usr/lib. Without this setting, LibreOffice will crash.
 
- * Another problem I found is that the library libJdbcOdbc.so not find libjvm.so library. To solve this you have to change the LD_LIBRARY_PATH environment variable in this way:
+ * Another issue I encountered is that the libJdbcOdbc.so library cannot locate the libjvm.so library. To resolve this, you need to modify the LD_LIBRARY_PATH environment variable as follows:
 
    ```bash
    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/java/default/lib/i386/client
    ```
 
- * If there is an error called *Invalid Handle* using the ODBC driver libmyodbc.so for MySQL, the problem is not the extension, but the driver itself. Other drivers work properly.
+ * If you encounter an error labeled *Invalid Handle* while using the ODBC driver libmyodbc.so for MySQL, the issue lies with the driver itself, not the extension. Other drivers function correctly.
