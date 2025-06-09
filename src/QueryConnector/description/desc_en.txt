@@ -1,1 +1,1 @@
-Allows you to attach a query to a spreadsheet OpenOffice/LibreOffice Calc. Saving the information on the spreadsheet itself for future data updates. It does not require OpenOffice/LibreOffice Base to connect the query. (Author: Enrico Messina)
+This extension enables you to link one or more queries to a LibreOffice Calc spreadsheet, storing the connection details directly in the spreadsheet for future data updates. It operates independently of LibreOffice Base, so there is no need to register an *.odb file to connect the query or queries.

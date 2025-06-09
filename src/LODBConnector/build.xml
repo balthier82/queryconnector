@@ -10,7 +10,7 @@
 <project name="LODBConnector" default="default" basedir=".">
     <description>Builds, tests, and runs the project LODBConnector.</description>
     <import file="nbproject/build-impl.xml"/>
-    <property name="query.connector.dir" value="E:\Enrico\MieiProgrammi\LibreOpenOffice\QueryConnector\libs"/>
+    <property name="query.connector.dir" value="..\QueryConnector\libs"/>
     <!--
 
     There exist several targets which are by default empty and which can be 

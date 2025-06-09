@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+    <node oor:name="OfficeMenuBarMerging">
+      <node oor:name="com.meserico.queryconnector-ext" oor:op="replace">
+		<node oor:name="s1" oor:op="replace">
+			<prop oor:name="MergePoint">
+				<value>.uno:DataMenu\.uno:DataAreaRefresh</value>
+			</prop>
+			<prop oor:name="MergeCommand">
+				<value>AddAfter</value>
+			</prop>
+			<prop oor:name="MergeFallback">
+				<value>AddPath</value>
+			</prop>
+			<prop oor:name="MergeContext" oor:type="xs:string">
+				<value>com.sun.star.sheet.SpreadsheetDocument</value>
+			</prop>
+			<node oor:name="MenuItems">
+				<node oor:name="m1" oor:op="replace">
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>private:separator</value>
+					</prop>
+				</node>
+				<node oor:name="m2" oor:op="replace">
+					<prop oor:name="Title" oor:type="xs:string">
+					  <value xml:lang="it">Connetti query...</value>
+					  <value xml:lang="en">Connect query...</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+					  <value>_self</value>
+					</prop>
+					<prop oor:name="URL" oor:type="xs:string">
+					  <value>com.meserico.QueryConnectorService:menu</value>
+					</prop>
+					<prop oor:name="Context" oor:type="xs:string"> 
+						<value>com.sun.star.sheet.SpreadsheetDocument</value> 
+					</prop>
+					<node oor:name="Submenu">
+					  <node oor:name="m3" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>service:com.meserico.QueryConnectorService?attach</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Attach data...</value>
+						  <value xml:lang="it">Aggancia dati...</value>
+						</prop>
+					  </node>
+					  <node oor:name="m4" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>service:com.meserico.QueryConnectorService?update</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Update</value>
+						  <value xml:lang="it">Aggiorna</value>
+						</prop>
+					  </node>
+					  <node oor:name="m5" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>private:separator</value>
+						</prop>
+					  </node>
+					  <node oor:name="m6" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>service:com.meserico.QueryConnectorService?modify</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Edit</value>
+						  <value xml:lang="it">Modifica</value>
+						</prop>
+					  </node>
+					  <node oor:name="m7" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>private:separator</value>
+						</prop>
+					  </node>
+					  <node oor:name="m8" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>service:com.meserico.QueryConnectorService?updateAll</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Update All</value>
+						  <value xml:lang="it">Aggiorna tutto</value>
+						</prop>
+					  </node>
+					  <node oor:name="m9" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>private:separator</value>
+						</prop>
+					  </node>
+					  <node oor:name="m10" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+						  <value>service:com.meserico.QueryConnectorService?info</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+						  <value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+						  <value/>
+						  <value xml:lang="en">Show Info</value>
+						  <value xml:lang="it">Mostra informazioni</value>
+						</prop>
+					  </node>
+					</node>
+				</node>
+			  </node>
+			</node>
+        </node>
+     </node>
+	 <node oor:name="Images">
+		  <node oor:name="com.meserico.queryconnector-ext-attach" oor:op="replace">
+			  <prop oor:name="URL" oor:type="xs:string">
+				  <value>service:com.meserico.QueryConnectorService?attach</value>
+			  </prop>
+			  <node oor:name="UserDefinedImages">
+				  <prop oor:name="ImageSmallURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/attach.png</value>
+				  </prop>
+				  <prop oor:name="ImageBigURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/attach.png</value>
+				  </prop>
+			  </node>
+		  </node>
+		  <node oor:name="com.meserico.queryconnector-ext-update" oor:op="replace">
+			  <prop oor:name="URL" oor:type="xs:string">
+				  <value>service:com.meserico.QueryConnectorService?update</value>
+			  </prop>
+			  <node oor:name="UserDefinedImages">
+				  <prop oor:name="ImageSmallURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/update.png</value>
+				  </prop>
+				  <prop oor:name="ImageBigURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/update.png</value>
+				  </prop>
+			  </node>
+		  </node>
+		  <node oor:name="com.meserico.queryconnector-ext-updateall" oor:op="replace">
+			  <prop oor:name="URL" oor:type="xs:string">
+				  <value>service:com.meserico.QueryConnectorService?updateAll</value>
+			  </prop>
+			  <node oor:name="UserDefinedImages">
+				  <prop oor:name="ImageSmallURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/update_all.png</value>
+				  </prop>
+				  <prop oor:name="ImageBigURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/update_all.png</value>
+				  </prop>
+			  </node>
+		  </node>
+		  <node oor:name="com.meserico.queryconnector-ext-info" oor:op="replace">
+			  <prop oor:name="URL" oor:type="xs:string">
+				  <value>service:com.meserico.QueryConnectorService?info</value>
+			  </prop>
+			  <node oor:name="UserDefinedImages">
+				  <prop oor:name="ImageSmallURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/info.png</value>
+				  </prop>
+				  <prop oor:name="ImageBigURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/info.png</value>
+				  </prop>
+			  </node>
+		  </node>
+		  <node oor:name="com.meserico.queryconnector-ext-modify" oor:op="replace">
+			  <prop oor:name="URL" oor:type="xs:string">
+				  <value>service:com.meserico.QueryConnectorService?modify</value>
+			  </prop>
+			  <node oor:name="UserDefinedImages">
+				  <prop oor:name="ImageSmallURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/modify.png</value>
+				  </prop>
+				  <prop oor:name="ImageBigURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/modify.png</value>
+				  </prop>
+			  </node>
+		  </node>
+		  <node oor:name="com.meserico.queryconnector-ext-menu" oor:op="replace">
+			  <prop oor:name="URL" oor:type="xs:string">
+				  <value>com.meserico.QueryConnectorService:menu</value>
+			  </prop>
+			  <node oor:name="UserDefinedImages">
+				  <prop oor:name="ImageSmallURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/queryconnector.png</value>
+				  </prop>
+				  <prop oor:name="ImageBigURL">
+					  <value>vnd.sun.star.extension://com.meserico.queryconnector/images/queryconnector.png</value>
+				  </prop>
+			  </node>
+		  </node>
+	 </node>
+  </node>
+</oor:component-data>

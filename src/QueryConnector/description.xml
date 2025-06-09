@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-	QueryConnector - Attach a query to a Calc document
-    Copyright (C) 2013 Enrico Giuseppe Messina
-
-    This library is free software; you can redistribute it and/or
-    modify it under the terms of the GNU Lesser General Public
-    License as published by the Free Software Foundation; either
-    version 2.1 of the License, or (at your option) any later version.
-
-    This library is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-    Lesser General Public License for more details.
-
-    You should have received a copy of the GNU Lesser General Public
-    License along with this library; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
--->
 <description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <version value="1.4.2" />
-    <identifier value="com.meserico.queryconnector-ext"/>
+	<version value="2.0.0"/>
+	<identifier value="com.meserico.queryconnector"/>
 	<display-name>
-		<name lang="en">Query Connector</name>
-		<name lang="it">Query Connector</name>
+		<name lang="en">QueryConnector</name>
+		<name lang="it">QueryConnector</name>
 	</display-name>
 	<icon>
-		<default xlink:href="icons/queryconnector.png" />
+		<default xlink:href="images/queryconnector.png"/>
 	</icon>
-    <registration>
-		<simple-license accept-by="admin" default-license-id="LGPL" suppress-on-update="true" >
-			<license-text xlink:href="license/lgpl.txt" lang="en" license-id="LGPL" />
-		</simple-license>
-	</registration>
 	<extension-description>
-		<src xlink:href="description/desc_en.txt" lang="en" />
-		<src xlink:href="description/desc_it.txt" lang="it" />
+		<src lang="en" xlink:href="description/desc_en.txt"/>
+		<src lang="it" xlink:href="description/desc_it.txt"/>
 	</extension-description>
-	<platform value="all" />
 </description>

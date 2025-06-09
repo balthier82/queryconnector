@@ -1,0 +1,12 @@
+#UNO project configuration file
+#Tue Apr 22 23:23:15 CEST 2025
+javaversion=java5
+project.build=build
+project.idl=/idl
+project.implementation=comp
+project.language=Java
+project.ooo=LibreOffice 25.2
+project.prefix=com.meserico.queryconnector
+project.sdk=25.2.2.2
+project.srcdir=/source
+regclassname=com.meserico.queryconnector.comp.RegistrationHandler

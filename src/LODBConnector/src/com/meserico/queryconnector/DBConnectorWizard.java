@@ -170,7 +170,7 @@ public class DBConnectorWizard extends JExtDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("com/meserico/queryconnector/languages"); // NOI18N
         setTitle(bundle.getString("WIZARD_MAIN_LABEL")); // NOI18N
-        setName("dbconnectionwizard");
+        setName("dbconnectionwizard"); // NOI18N
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -195,19 +195,19 @@ public class DBConnectorWizard extends JExtDialog {
         jPanel21.add(stepsTitle);
 
         step1.setText(bundle.getString("FIRST_STEP_DB_CONNECTION")); // NOI18N
-        step1.setName("step1");
+        step1.setName("step1"); // NOI18N
         jPanel21.add(step1);
 
         step2.setText(bundle.getString("SECOND_STEP_QUERY")); // NOI18N
-        step2.setName("step2");
+        step2.setName("step2"); // NOI18N
         jPanel21.add(step2);
 
         step3.setText(bundle.getString("THIRD_STEP_RESULT_PREVIEW")); // NOI18N
-        step3.setName("step3");
+        step3.setName("step3"); // NOI18N
         jPanel21.add(step3);
 
         step4.setText(bundle.getString("ENDING_STEP")); // NOI18N
-        step4.setName("step4");
+        step4.setName("step4"); // NOI18N
         jPanel21.add(step4);
 
         wizardSteps.add(jPanel21, java.awt.BorderLayout.NORTH);
